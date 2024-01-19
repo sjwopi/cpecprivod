@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* variables */
+/* reser */
 * {
   color: #000;
   font-size: 16px;
@@ -20,6 +22,7 @@ select {
   cursor: pointer;
 }
 
+/* animation */
 html {
   font: 5vmin/1.3 Serif;
   /* overflow: hidden; */
@@ -46,25 +49,25 @@ body::before, body::after {
 }
 
 body::before {
-  text-shadow: 0.7630470822em 1.8792597347em 11.7055330452px hsl(220, 78%, 29%), 3.3613976038em 3.211650254em 11.7833108892px hsl(220, 78%, 29%), -0.077773536em 0.2355474538em 11.3786631864px hsl(220, 78%, 29%), -0.4184672341em 2.2840023178em 10.5392050614px hsl(220, 78%, 29%), 1.0093319857em 2.7009639316em 10.9387335371px hsl(220, 78%, 29%), 1.5721684404em 1.4431679266em 10.3711237528px hsl(220, 78%, 29%), -0.0681265434em 0.4532118014em 11.8497838475px hsl(220, 78%, 29%), 0.5414178732em 1.22094667em 10.6255058018px hsl(220, 78%, 29%), 2.0557163314em 2.0613948413em 11.6331138177px hsl(220, 78%, 29%), 1.3511266794em 1.7102638074em 10.7595843321px hsl(220, 78%, 29%), -0.1557674514em 3.0714743504em 11.6182990649px hsl(220, 78%, 29%);
+  text-shadow: 3.3175355304em 1.6771430883em 11.793416644px hsl(220, 78%, 29%), 0.5273619575em 0.9713997737em 10.0651500446px hsl(220, 78%, 29%), 2.7089884786em 3.4502531176em 11.2027320045px hsl(220, 78%, 29%), 0.8919321228em 3.4121080539em 10.9406969204px hsl(220, 78%, 29%), 2.0658865683em 0.1223616517em 11.7375603593px hsl(220, 78%, 29%), 3.1222959132em 3.0046891458em 10.4236698613px hsl(220, 78%, 29%), 1.5825740457em 2.7536680164em 11.1502026974px hsl(220, 78%, 29%), 2.3558416176em 0.9269573664em 11.3985477375px hsl(220, 78%, 29%), -0.4616313388em 1.4968408621em 10.7301886387px hsl(220, 78%, 29%), 2.8562416815em 2.8242408624em 11.1368736211px hsl(220, 78%, 29%), 2.5000336268em 2.2046871122em 10.3526242378px hsl(220, 78%, 29%);
   animation-duration: 44s;
   animation-delay: -27s;
 }
 
 body::after {
-  text-shadow: 3.1882080585em 0.6790198757em 10.2334649105px hsl(220, 78%, 29%), 0.6842814039em 2.7846963481em 11.2613895466px hsl(220, 78%, 29%), 1.5883865187em -0.0000985951em 10.6584910882px hsl(220, 78%, 29%), 1.3878351215em 2.5281023632em 11.1922619655px hsl(220, 78%, 29%), -0.0896986666em 2.0078483268em 10.7044846722px hsl(220, 78%, 29%), 0.2250894695em 2.7834084749em 10.158070304px hsl(220, 78%, 29%), 3.1388030927em 1.3866064631em 11.1981184567px hsl(220, 78%, 29%), 0.4610766702em 1.7714091344em 11.9015775618px hsl(220, 78%, 29%), -0.4279397006em 2.7971668933em 10.2231676085px hsl(220, 78%, 29%), -0.1456127889em 1.919093402em 11.2652211614px hsl(220, 78%, 29%), 0.0640779123em 0.5668963224em 11.3989326537px hsl(220, 78%, 29%);
+  text-shadow: -0.4779328812em 0.4624098247em 10.2895291094px hsl(220, 78%, 29%), 1.0518934648em -0.3430603513em 11.3012587576px hsl(220, 78%, 29%), 2.6046239924em 2.412419249em 11.7012585747px hsl(220, 78%, 29%), 2.1154073566em 2.6446369735em 11.3682472119px hsl(220, 78%, 29%), 2.4776148069em 2.7959817949em 11.2505658454px hsl(220, 78%, 29%), 1.8645009504em 1.1738516621em 11.1135753272px hsl(220, 78%, 29%), 0.0845874562em -0.1468592929em 11.4504860736px hsl(220, 78%, 29%), 2.7084896013em 3.2704947101em 10.8300793975px hsl(220, 78%, 29%), 1.9701633548em 2.5823842009em 10.7266233026px hsl(220, 78%, 29%), 2.2612114715em -0.3618703384em 10.3141125593px hsl(220, 78%, 29%), 2.9977054582em 0.45636644em 10.5142220587px hsl(220, 78%, 29%);
   animation-duration: 43s;
   animation-delay: -32s;
 }
 
 head::before {
-  text-shadow: 1.2896835731em 2.718852143em 11.4807014475px hsl(220, 78%, 29%), 1.3245849744em -0.277350531em 11.0314655295px hsl(220, 78%, 29%), -0.3911635637em 1.6698274765em 10.5041901587px hsl(220, 78%, 29%), 1.7050544159em 0.7248480394em 11.4872969362px hsl(220, 78%, 29%), 1.2415845977em 3.1951147268em 10.9183351905px hsl(220, 78%, 29%), 1.4532484504em 0.1457691823em 10.2588966987px hsl(220, 78%, 29%), 2.6659978682em 2.1672245284em 11.8925641943px hsl(220, 78%, 29%), 1.9314364252em 2.3157862976em 11.9560906494px hsl(220, 78%, 29%), 0.9844503726em 1.7436076011em 10.5152846737px hsl(220, 78%, 29%), 1.519957213em 2.7279596592em 10.2278238116px hsl(220, 78%, 29%), 1.8643426036em 2.6326728034em 11.0080353899px hsl(220, 78%, 29%);
+  text-shadow: 0.2427254959em 0.3395401485em 11.8609888442px hsl(220, 78%, 29%), 0.3070482764em -0.1755624836em 10.4285874532px hsl(220, 78%, 29%), 1.2283960814em 0.1250817483em 10.16190012px hsl(220, 78%, 29%), 0.473468786em 1.5023711525em 11.8798552295px hsl(220, 78%, 29%), -0.201093965em 2.3174797742em 11.2860422171px hsl(220, 78%, 29%), 1.0676262167em 2.17904254em 10.4432651918px hsl(220, 78%, 29%), 0.0395205939em 0.4272995617em 11.8687376892px hsl(220, 78%, 29%), 1.4846847866em 1.353830767em 11.4170500606px hsl(220, 78%, 29%), 1.2887834045em 0.2157897555em 11.5409888276px hsl(220, 78%, 29%), 1.348337946em 2.7005307668em 11.3186001949px hsl(220, 78%, 29%), 2.2112173021em 1.7923887222em 11.6553282559px hsl(220, 78%, 29%);
   animation-duration: 42s;
   animation-delay: -23s;
 }
 
 head::after {
-  text-shadow: -0.4642632503em 2.808696379em 11.0928433783px hsl(220, 78%, 29%), 0.6106758699em 2.4461042592em 10.3048889308px hsl(220, 78%, 29%), 2.1790357549em -0.3009092793em 10.8505763515px hsl(220, 78%, 29%), 1.9576268143em 1.519912453em 10.9124651931px hsl(220, 78%, 29%), 2.3559461893em -0.4929901315em 10.6536524046px hsl(220, 78%, 29%), 3.0803574156em 3.4289852641em 10.7450104366px hsl(220, 78%, 29%), 1.4528998599em 2.9742379151em 10.2041804125px hsl(220, 78%, 29%), 0.8814366387em -0.0422227997em 10.1901396191px hsl(220, 78%, 29%), 1.0684358505em 3.2239005908em 11.3796306203px hsl(220, 78%, 29%), 3.1623824623em 3.195763451em 10.668240148px hsl(220, 78%, 29%), 0.0661714621em 1.8771624148em 10.8054394378px hsl(220, 78%, 29%);
+  text-shadow: 0.7585660621em 1.2278550747em 11.0811993373px hsl(220, 78%, 29%), -0.3955150203em 3.1547395683em 10.9288715363px hsl(220, 78%, 29%), 3.4636504104em 0.8950178635em 11.7939131103px hsl(220, 78%, 29%), 1.2002109588em 2.5407453996em 10.8932284975px hsl(220, 78%, 29%), 1.7322894299em 0.6281846552em 11.3374360631px hsl(220, 78%, 29%), 0.0987805228em 1.4895434123em 10.975966012px hsl(220, 78%, 29%), 2.3546622787em 3.2957931621em 10.4905749509px hsl(220, 78%, 29%), 3.3705025829em 1.1647365763em 11.4613750337px hsl(220, 78%, 29%), 3.0597120269em 2.3966278466em 11.0187320344px hsl(220, 78%, 29%), 1.3612438666em 3.3385863319em 11.4513686257px hsl(220, 78%, 29%), 2.147728393em -0.2848367142em 11.9980457677px hsl(220, 78%, 29%);
   animation-duration: 41s;
   animation-delay: -19s;
 }
@@ -88,6 +91,7 @@ head::after {
   padding-top: 30px;
 }
 
+/* header */
 .header {
   width: 100%;
 }
@@ -185,6 +189,7 @@ head::after {
   font-weight: 600;
 }
 
+/* carousel */
 .carousel-container {
   height: 608px;
   padding-bottom: 57px;
@@ -265,6 +270,7 @@ head::after {
   background-color: #103784;
 }
 
+/* popular */
 .popular {
   max-width: 1520px;
   margin: 0 auto 56px auto;
@@ -368,15 +374,7 @@ head::after {
   display: flex;
 }
 
-.catalog {
-  background-color: #F9F9F9;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  gap: 7px;
-  padding: 60px calc((100% - 1520px) / 2);
-}
-
+/* overlay for catalog hover */
 .main-overlay {
   display: none;
   position: absolute;
@@ -389,13 +387,16 @@ head::after {
 }
 .main-overlay.active {
   display: block;
-  /* content: '.';
-  z-index: 0;
-  animation: 44s -27s move infinite ease-in-out alternate;
+}
 
-  @include dots(40);
-  animation-duration: 42s;
-  animation-delay: -23s; */
+/* catalog */
+.catalog {
+  background-color: #F9F9F9;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  padding: 60px calc((100% - 1520px) / 2);
 }
 
 .catalog__title {
@@ -552,6 +553,7 @@ head::after {
   background-image: url(./img/like-blue-active.svg);
 }
 
+/* pagination */
 .pagination {
   margin: 0;
 }
@@ -590,6 +592,7 @@ head::after {
   background-color: #E4EAF7;
 }
 
+/* projects */
 .projects {
   position: relative;
   background-color: #E4EAF7;
@@ -636,6 +639,7 @@ head::after {
   position: absolute;
 }
 
+/* newsletter */
 .newsletter {
   margin-top: -27px;
   padding-top: 27px;
@@ -703,7 +707,7 @@ head::after {
   background-color: #103784;
 }
 
-/* Footer */
+/* footer */
 .footer {
   width: 100%;
   height: 345px;
@@ -713,6 +717,9 @@ head::after {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.footer.blue {
+  background-color: #E4EAF7;
 }
 
 .footer__container {
@@ -734,7 +741,6 @@ head::after {
 
 .footer__item {
   font-size: 16px;
-  /* не ошибка, у line-height стоит размер от font-size*/
   line-height: 16px;
   display: block;
   max-width: 282px;
@@ -773,6 +779,7 @@ head::after {
   background-color: #103784;
 }
 
+/* breadcrumb */
 .breadcrumb {
   background-color: #F9F9F9;
   padding: 0 calc((100% - 1520px) / 2) 20px calc((100% - 1520px) / 2);
@@ -787,6 +794,7 @@ head::after {
   background: url(./img/arr-right.svg) center/contain no-repeat;
 }
 
+/* product */
 .product {
   background-color: #F9F9F9;
   padding: 56px calc((100% - 1520px) / 2);
@@ -925,6 +933,7 @@ head::after {
   line-height: 25px;
 }
 
+/* product sidebar */
 .product__sidebar {
   max-height: 430px;
   display: flex;
@@ -1025,7 +1034,56 @@ head::after {
   line-height: 25px;
 }
 
-.description {
+/* nav for description product */
+.infonav {
   background-color: #F9F9F9;
   padding: 60px calc((100% - 1520px) / 2);
+  display: flex;
+  flex-direction: row;
+}
+
+.infonav__item {
+  display: flex;
+  align-items: center;
+  height: 43px;
+  background-color: #fff;
+  border: 2px solid #5078B9;
+  border-radius: 20px;
+  padding: 10px 30px;
+  box-shadow: -7px -7px 30px 0px rgba(16, 55, 132, 0.0588235294);
+}
+.infonav__item:first-child {
+  padding: 10px 70px 10px 30px;
+  margin-right: -40px;
+}
+.infonav__item:nth-child(2) {
+  padding: 10px 30px 10px 60px;
+  margin-right: 30px;
+}
+.infonav__item.active {
+  padding: 10px 30px;
+  z-index: 2;
+  background-color: #5078B9;
+  color: #fff;
+}
+
+.infonav__title {
+  font-size: 28px;
+  line-height: 35px;
+}
+
+/* description */
+.description {
+  background-color: #F9F9F9;
+  padding: 0 calc((100% - 1520px) / 2);
+  display: grid;
+  grid-template-columns: 1fr 530px;
+  grid-template-rows: 1fr;
+}
+.description .product__text {
+  min-width: 469px;
+}
+
+.description__text {
+  width: 100%;
 }

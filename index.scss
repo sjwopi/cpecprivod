@@ -1,3 +1,5 @@
+/* variables */
+
 $light-gray: #F9F9F9;
 $white-blue: #E4EAF7;
 $gray: #ECECEC;
@@ -23,6 +25,8 @@ $font-line-l: 25px;
 $font-size-xl: 28px;
 $font-line-xl: 35px;
 
+/* reser */
+
 * {
   color: $black;
   font-size: $font-size-s;
@@ -30,7 +34,6 @@ $font-line-xl: 35px;
   padding: 0;
   box-sizing: border-box;
 }
-
 a,
 input,
 button,
@@ -43,6 +46,8 @@ select {
   background: initial;
   cursor: pointer;
 }
+
+/* animation */
 
 @mixin dots($count) {
   $text-shadow: ();
@@ -61,14 +66,12 @@ html {
   /* overflow: hidden; */
   background: rgb(242, 246, 255);
 }
-
 body, head {
   display: block;
   font-size: 52px;
   color: transparent;
   background: transparent;
 }
-
 head::before, head::after,
 body::before, body::after {
   position: fixed;
@@ -81,31 +84,26 @@ body::before, body::after {
   
   animation: .1s -2s move infinite ease-in-out alternate;
 }
-
 body::before {
   @include dots(10);
   animation-duration: 44s;
   animation-delay: -27s;
 }
-
 body::after {
   @include dots(10);
   animation-duration: 43s;
   animation-delay: -32s;
 }
-
 head::before {
   @include dots(10);
   animation-duration: 42s;
   animation-delay: -23s;
 }
-
 head::after {
   @include dots(10);
   animation-duration: 41s;
   animation-delay: -19s;
 }
-
 @keyframes move {
   from {
     transform: rotate(0deg) scale(12) translateX(-20px);
@@ -125,6 +123,8 @@ head::after {
   align-items: center;
   padding-top: 30px;
 }
+
+/* header */
 
 .header {
   width: 100%;
@@ -213,6 +213,8 @@ head::after {
   font-weight: 600;
 }
 
+/* carousel */
+
 .carousel-container {
   height: 608px;
   padding-bottom: 57px;
@@ -285,6 +287,8 @@ head::after {
   color: $white;
   background-color: $dark-blue;
 }
+
+/* popular */
 
 .popular {
   max-width: $desktop-width;
@@ -383,14 +387,8 @@ head::after {
   }
 }
 
-.catalog {
-  background-color: $light-gray;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  gap: 7px;
-  padding: 60px calc((100% - $desktop-width) / 2);
-}
+/* overlay for catalog hover */
+
 .main-overlay {
   display: none;
   position: absolute;
@@ -400,18 +398,19 @@ head::after {
   height: 100%;
   top: 0;
   border-radius: 25px;
-  
-  //animation: 44s -27s move infinite ease-in-out alternate;
   &.active {
     display: block;
-    /* content: '.';
-    z-index: 0;
-    animation: 44s -27s move infinite ease-in-out alternate;
-    
-    @include dots(40);
-    animation-duration: 42s;
-    animation-delay: -23s; */
   }
+}
+/* catalog */
+
+.catalog {
+  background-color: $light-gray;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  padding: 60px calc((100% - $desktop-width) / 2);
 }
 .catalog__title {
   color: $black;
@@ -549,6 +548,9 @@ head::after {
     background-image: url(./img/like-blue-active.svg);
   }
 }
+
+/* pagination */
+
 .pagination {
   margin: 0;
 }
@@ -584,6 +586,8 @@ head::after {
     }
   }
 }
+
+/* projects */
 
 .projects {
   position: relative;
@@ -625,6 +629,8 @@ head::after {
   height: 80%;
   position: absolute;
 }
+
+/* newsletter */
 
 .newsletter {
   margin-top: -27px;
@@ -686,9 +692,7 @@ head::after {
   background-color: $dark-blue;
 }
 
-
-
-/* Footer */
+/* footer */
 
 .footer {
   width: 100%;
@@ -699,6 +703,9 @@ head::after {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  &.blue {
+    background-color: $white-blue;
+  }
 }
 .footer__container {
   list-style: none;
@@ -718,7 +725,6 @@ head::after {
 }
 .footer__item {
   font-size: $font-size-s;
-  /* не ошибка, у line-height стоит размер от font-size*/
   line-height: $font-size-s;
   display: block;
   max-width: 282px;
@@ -752,6 +758,9 @@ head::after {
   border-radius: 20px;
   background-color: $dark-blue;
 }
+
+/* breadcrumb */
+
 .breadcrumb {
   background-color: $light-gray;
   padding: 0 calc((100% - $desktop-width) / 2) 20px calc((100% - $desktop-width) / 2);
@@ -765,6 +774,7 @@ head::after {
   background: url(./img/arr-right.svg) center/contain no-repeat;
 }
 
+/* product */
 
 .product {
   background-color: $light-gray;
@@ -835,7 +845,6 @@ head::after {
     border: 2px solid $blue;
   }
 }
-
 .product__description {
   list-style: none;
   width: 100%;
@@ -888,6 +897,7 @@ head::after {
   line-height: $font-line-l;
 }
 
+/* product sidebar */
 
 .product__sidebar {
   max-height: 430px;
@@ -981,7 +991,56 @@ head::after {
   line-height: $font-line-l;
 }
 
-.description {
+/* nav for description product */
+
+.infonav {
   background-color: $light-gray;
   padding: 60px calc((100% - $desktop-width) / 2);
+  display: flex;
+  flex-direction: row;
 }
+.infonav__item {
+  display: flex;
+  align-items: center;
+  height: 43px;
+  background-color: $white;
+  border: 2px solid $blue;
+  border-radius: 20px;
+  padding: 10px 30px;
+  box-shadow: -7px -7px 30px 0px #1037840F;
+  &:first-child {
+    padding: 10px 70px 10px 30px;
+    margin-right: -40px;
+  }
+  &:nth-child(2) {
+    padding: 10px 30px 10px 60px;
+    margin-right: 30px;
+  }
+  &.active {
+    padding: 10px 30px;
+    z-index: 2;
+    background-color: $blue;
+    color: $white;
+  }
+}
+.infonav__title {
+  font-size: $font-size-xl;
+  line-height: $font-line-xl;
+}
+
+/* description */
+
+.description {
+  background-color: $light-gray;
+  padding: 0 calc((100% - $desktop-width) / 2);
+  display: grid;
+  grid-template-columns: 1fr 530px;
+  grid-template-rows: 1fr;
+  .product__text {
+    min-width: 469px;
+  }
+}
+.description__text {
+  width: 100%;
+}
+
