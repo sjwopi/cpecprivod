@@ -7,6 +7,7 @@ $white: #fff;
 $black: #000;
 
 $desktop-width: 1520px;
+$main-overlay-width: 1140px;
 
 $font-size-s: 16px;
 $font-line-s: 21px;
@@ -17,8 +18,8 @@ $font-line-m: 18px;
 $font-size-l: 20px;
 $font-line-l: 25px;
 
-$font-size-xl: 30px;
-$font-line-xl: 40px;
+$font-size-xl: 28px;
+$font-line-xl: 35px;
 
 * {
   color: $black;
@@ -323,12 +324,18 @@ head::after {
   }
 }
 .popular__img {
-  max-width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 190px;
+  max-width: 200px;
 }
 .popular__subtitle {
   position: absolute;
   width: 100%;
-  padding: 0 30px;
+  padding: 0 20px;
+  margin-bottom: 35px;
   left: 0;
   bottom: 0;
   text-align: center;
@@ -339,10 +346,33 @@ head::after {
 
 .catalog {
   background-color: $light-gray;
-  padding: 60px calc((100% - $desktop-width) / 2);
+  position: relative;
   display: flex;
   flex-direction: row;
   gap: 7px;
+  padding: 60px calc((100% - $desktop-width) / 2);
+}
+.main-overlay {
+  display: none;
+  position: absolute;
+  z-index: 4;
+  width: $main-overlay-width;
+  background-color: $white-blue;
+  height: 100%;
+  top: 0;
+  border-radius: 25px;
+  
+  //animation: 44s -27s move infinite ease-in-out alternate;
+  &.active {
+    display: block;
+    /* content: '.';
+    z-index: 0;
+    animation: 44s -27s move infinite ease-in-out alternate;
+    
+    @include dots(40);
+    animation-duration: 42s;
+    animation-delay: -23s; */
+  }
 }
 .catalog__title {
   color: $black;
@@ -351,6 +381,7 @@ head::after {
   font-weight: 500;
 }
 .catalog__sidebar {
+  z-index: 1;
   width: 375px;
 }
 .catalog__nav {
@@ -358,27 +389,55 @@ head::after {
   background-color: $white;
   border: $white-blue 1px solid;
   border-radius: 20px;
+  z-index: 5;
 }
 .catalog__name {
   min-width: 375px;
-  display: block;
+  position: relative;
   font-size: $font-size-l;
   line-height: $font-line-l;
+  display: block;
   padding: 16px 33px;
   border-bottom: $white-blue 1px solid;
+  z-index: 5;
+  &:hover {
+    min-width: 397px;
+    padding-right: 50px;
+    background-color: $white-blue;
+  }
 }
 .catalog__container {
+  z-index: 2;
   width: 100%;
 }
 .catalog__grid {
+  position: relative;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 587px);
   gap: 7px;
   margin-bottom: 20px;
+  transition: all .5s ease-in-out;
+  &.active {
+    padding: 20px;
+    grid-template-rows: repeat(3, 283px);
+    .catalog__buy {
+      display: none;
+    }
+    .catalog__subtext {
+      display: none;
+    }
+    .catalog__like {
+      display: none;
+    }
+    .catalog__img {
+      object-fit: contain;
+    }
+  }
 }
 .catalog__item {
+  z-index: 5;
   position: relative;
   width: 100%;
   height: 100%;
@@ -391,11 +450,17 @@ head::after {
   gap: 20px;
   border: $white-blue 2px solid;
   border-radius: 20px;
+  &_small {
+    padding: 30px;
+    width: 300px;
+    height: 400px;
+  }
 }
 .catalog__img {
   display: block;
   width: 220px;
   max-height: 340px;
+  object-fit: contain;
   overflow: hidden;
 }
 .catalog__buy {
@@ -640,4 +705,65 @@ head::after {
   padding: 14px 33px;
   border-radius: 20px;
   background-color: $dark-blue;
+}
+.breadcrumb {
+  background-color: $light-gray;
+  padding: 0 calc((100% - $desktop-width) / 2) 20px calc((100% - $desktop-width) / 2);
+  margin: 0;
+}
+.breadcrumb-item.active::before {
+  content: "" !important;
+  width: 9px;
+  height: 15px;
+  padding: 0 30px;
+  background: url(./img/arr-right.svg) center/contain no-repeat;
+}
+.popular__description {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 40px 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $blue;
+  opacity: .9;
+  &:hover {
+    display: block;
+  }
+}
+.popular__description-text {
+  line-height: $font-size-s;
+  color: $white;
+  &:last-child {
+    text-decoration: underline;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+.popular_catalog {
+  min-width: 100%;
+  max-width: 100%;
+  padding: 50px calc((100% - $desktop-width) / 2);
+  margin: 0;
+  background-color: $light-gray;
+  .popular__title {
+    margin-top: 0;
+  }
+  .popular__container {
+    grid-template-rows: repeat(3, 300px);
+  }
+  .popular__item:hover {
+    .popular__subtitle {
+      display: none;
+    }
+    .popular__description {
+      display: flex;
+    }
+  }
 }
