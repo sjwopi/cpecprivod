@@ -1,6 +1,7 @@
 $light-gray: #F9F9F9;
 $white-blue: #E4EAF7;
 $gray: #ECECEC;
+$dark-gray: #6C6C6C;
 $blue: #5078B9;
 $dark-blue: #103784;
 $white: #fff;
@@ -209,6 +210,7 @@ head::after {
   text-transform: uppercase;
   background-color: $white;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .carousel-container {
@@ -418,7 +420,7 @@ head::after {
   grid-template-rows: repeat(3, 587px);
   gap: 7px;
   margin-bottom: 20px;
-  transition: all .5s ease-in-out;
+  transition: all .3s ease-in-out;
   &.active {
     padding: 20px;
     grid-template-rows: repeat(3, 283px);
@@ -678,6 +680,7 @@ head::after {
   display: block;
   max-width: 282px;
   color: $black;
+  margin: 0;
   &_big {
     font-weight: 700;
   }
@@ -731,8 +734,10 @@ head::after {
   align-items: center;
   justify-content: space-between;
   background-color: $blue;
-  opacity: .9;
+  opacity: 0;
+  transition: all .2s ease-in-out;
   &:hover {
+    opacity: 0.9;
     display: block;
   }
 }
@@ -767,3 +772,167 @@ head::after {
     }
   }
 }
+
+
+.product {
+  background-color: $light-gray;
+  padding: 56px calc((100% - $desktop-width) / 2);
+}
+.product__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.product__title {
+  color: $black;
+  font-size: $font-size-xl;
+  line-height: $font-line-xl;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.product__main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.product__imgs {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+}
+.product__main-img {
+  position: relative;
+  width: 530px;
+  height: 530px;
+  background-color: $white;
+  border: 2px solid $white-blue;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.product__like {
+  display: block;
+  width: 40px;
+  height: 44px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: url(./img/like-blue.svg) center/contain no-repeat;
+  &.active {
+    background-image: url(./img/like-blue-active.svg);
+  }
+}
+.product__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 7px;
+}
+.product__nav-item {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background-color: $white;
+  border: 2px solid $white-blue;
+  border-radius: 20px;
+  cursor: pointer;
+  &.active {
+    border: 2px solid $blue;
+  }
+}
+
+.product__description{
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 20px 30px 0 35px;
+}
+.product__art{
+  color: $blue;
+  margin-bottom: 20px;
+  font-size: $font-size-l;
+  line-height: $font-line-l;
+}
+.product__description-item{
+  padding: 0;
+  margin: 0 0 24px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+}
+.product__subtitle{
+  min-width:fit-content;
+  width:max-content;
+  margin: 0;
+  padding: 0;
+  color: $dark-gray;
+  font-size: $font-size-l;
+  line-height: $font-line-l;
+}
+.product__underline{
+  width: 100%;
+  height: 16px;
+  margin: 2px;
+  border-bottom: 1px solid $white-blue;
+}
+.product__text{
+  min-width: 148px;
+  max-width: 148px;
+  margin: 0;
+  padding: 0;
+  font-size: $font-size-l;
+  line-height: $font-line-l;
+}
+.product__link {
+  color: $dark-blue;
+  text-decoration: underline;
+  font-size: $font-size-l;
+  line-height: $font-line-l;
+}
+
+
+.product__sidebar {
+  max-height: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.product__sidebar-main {
+  height: 300px;
+  width: 270px;
+  border: 2px solid $white-blue;
+  border-radius: 20px;
+  box-shadow: 7px 7px 30px 0px #1037840F;
+  box-shadow: -7px -7px 30px 0px #1037840F;
+}
+.product__sidebar-btn {
+  width: 100%;
+  padding: 14px 0;
+  text-align: center;
+  font-size: $font-size-l;
+  line-height: $font-line-l;
+  font-weight: 600;
+  border-radius: 20px;
+  border: 2px solid $white-blue;
+  box-shadow: 7px 7px 30px 0px #1037840F;
+  box-shadow: -7px -7px 30px 0px #1037840F;
+  &:hover {
+    color: $white;
+    text-decoration: none;
+    background-color: $blue;
+    border: none;
+  }
+  &.active {
+    color: $white;
+    background-color: $blue;
+    border: none;
+  }
+}
+
