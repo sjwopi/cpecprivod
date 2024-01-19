@@ -20,7 +20,7 @@
 
     <div class="header__container">
       <div class="header__main">
-        <img class="" src="./img/main-logo.svg" alt="лого компании"/>
+        <a href="./index.html"><img src="./img/main-logo.svg" alt="лого компании"/></a> 
 
         <input class="header__input" placeholder="Поиск по сайту"/>
 
@@ -46,7 +46,7 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="./index.html">Главная</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="./index.html">Каталог</a></li>
       </ol>
     </nav>
 
@@ -95,14 +95,31 @@
 
         </div>
         <div class="product__sidebar">
-          <div class="product__sidebar-main"></div>
+          <div class="product__sidebar-main">
+            <h2 class="product__price">4 760 ₽ <span class="product__price sub">2 380 ₽</span></h2>
+            <p class="product__subtext">Цена с НДС 20%</p>
+
+            <div class="product__counter">
+              <div class="d-flex">
+                <button class="product__counter-btn" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                <input type="number" class="product__input" value="2">
+                <button class="product__counter-btn right" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+              </div>
+              <p>х 2 380</p>
+            </div>
+
+            <button class="product__sidebar-btn active">Добавить в корзину</button>
+            <p class="product__desc-info">На складе 2 шт<br>
+              Доставка от 4х дней
+            </p>
+          </div>
           <a href="./catalog.html" class="product__sidebar-btn">Каталог</a>
           <a href="" class="product__sidebar-btn">Задать вопрос</a>
         </div>
       </div>
     </section>
 
-    <section class="projects">
+    <section class="projects sub">
       <h2 class="projects__title">Сопутствующие товары</h2>
 
       <div class="projects__container">
@@ -181,6 +198,33 @@
       </div>
 
       <img class="projects__overlay" src="./img/Rectangle 146.png">
+    </section>
+
+    <section class="description">
+      
+      <ul class="product__description description__text">
+            <li class="product__description-item">
+              <p class="product__subtitle">Диапазон рабочих температур</p>
+              <div class="product__underline"></div>
+              <p class="product__text">0~60°C</p>
+            </li>
+            <li class="product__description-item">
+              <p class="product__subtitle">Максимальное входное давление</p>
+              <div class="product__underline"></div>
+              <p class="product__text">10 Бар</p>
+            </li>
+            <li class="product__description-item">
+              <p class="product__subtitle">Рабочая среда</p>
+              <div class="product__underline"></div>
+              <p class="product__text">воздух</p>
+            </li>
+            <li class="product__description-item">
+              <p class="product__subtitle">Рабочая среда</p>
+              <div class="product__underline"></div>
+              <p class="product__text">воздух</p>
+            </li>
+          <ul>
+
     </section>
 
   </main>

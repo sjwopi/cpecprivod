@@ -40,31 +40,31 @@ body::before, body::after {
   left: 50%;
   width: 3em;
   height: 3em;
-  content: ".";
+  content: "a";
   z-index: -1;
-  animation: 44s -27s move infinite ease-in-out alternate;
+  animation: 0.1s -2s move infinite ease-in-out alternate;
 }
 
 body::before {
-  text-shadow: 1.5207354768em 1.6432896337em 22.4854780555px hsl(220, 78%, 29%), 3.2109998147em -0.0087460416em 23.4681656527px hsl(220, 78%, 29%), 2.2364890259em 2.0283779234em 18.372380952px hsl(220, 78%, 29%), 2.3746301619em 0.3314456648em 13.1460888487px hsl(220, 78%, 29%), 1.3789683849em 2.7948253928em 22.8399855837px hsl(220, 78%, 29%), 3.337828142em 1.0650583512em 15.7410197322px hsl(220, 78%, 29%), 0.7978744754em 0.2536627526em 16.512589688px hsl(220, 78%, 29%), 0.15661207em 0.9903675309em 14.1419836426px hsl(220, 78%, 29%), 1.4887992003em 0.1292583036em 19.5568764634px hsl(220, 78%, 29%), -0.2013050602em 0.1533854924em 16.3042619044px hsl(220, 78%, 29%), 0.3931190195em 3.233096871em 20.3443335933px hsl(220, 78%, 29%), 2.3263152961em 3.1837958164em 20.7666630441px hsl(220, 78%, 29%), 1.8875035471em 2.2209589842em 23.400715234px hsl(220, 78%, 29%), 3.1541846285em 0.3761334646em 24.4956247487px hsl(220, 78%, 29%), 1.4330032889em 1.4300246035em 14.3014108312px hsl(220, 78%, 29%), -0.4383805325em 2.0660761521em 22.2735071897px hsl(220, 78%, 29%), 1.4005051112em 0.2543986072em 24.3781362511px hsl(220, 78%, 29%), 0.0413703329em 1.0154922919em 19.4712974299px hsl(220, 78%, 29%), 0.3404206619em 0.8402833529em 17.823503056px hsl(220, 78%, 29%), -0.113120951em 0.0661546478em 17.1442301588px hsl(220, 78%, 29%), -0.0049293858em 3.1033585693em 17.6350111132px hsl(220, 78%, 29%), 0.7390622109em 3.0095681198em 23.7207412165px hsl(220, 78%, 29%), 0.5599171072em 2.9838325858em 13.7283300013px hsl(220, 78%, 29%), -0.2042356663em 2.8925393903em 17.0446233027px hsl(220, 78%, 29%), 1.6708498108em 3.2632289762em 20.7945192261px hsl(220, 78%, 29%), 2.4250874177em 2.7590149901em 18.8401604994px hsl(220, 78%, 29%), -0.1501537666em 1.2373395074em 17.6721965391px hsl(220, 78%, 29%), -0.3039031028em -0.4407990334em 17.7886878183px hsl(220, 78%, 29%), 2.8643473139em 1.899065094em 18.1266085702px hsl(220, 78%, 29%), 1.459123868em 0.2488023039em 18.0919560092px hsl(220, 78%, 29%), -0.1886723924em 0.3287903262em 23.6027518781px hsl(220, 78%, 29%), 1.6335269803em 0.7515588899em 22.4033270778px hsl(220, 78%, 29%), 0.8293251052em 1.2427830435em 14.0638988101px hsl(220, 78%, 29%), 1.3376984832em 1.0644755495em 23.8205503938px hsl(220, 78%, 29%), 3.3222095788em 1.8554456326em 16.6142189758px hsl(220, 78%, 29%), 2.8842773498em 0.1861032218em 24.888820731px hsl(220, 78%, 29%), 0.2560858245em 0.2983927705em 21.5028453513px hsl(220, 78%, 29%), 3.3960006221em 0.382530429em 21.3538243049px hsl(220, 78%, 29%), 0.9324411487em 0.9691170298em 22.0933476929px hsl(220, 78%, 29%), 0.1970704559em 0.6762789007em 13.9842297314px hsl(220, 78%, 29%), 2.1561116991em 2.4950037052em 22.0961945003px hsl(220, 78%, 29%);
+  text-shadow: 0.7630470822em 1.8792597347em 11.7055330452px hsl(220, 78%, 29%), 3.3613976038em 3.211650254em 11.7833108892px hsl(220, 78%, 29%), -0.077773536em 0.2355474538em 11.3786631864px hsl(220, 78%, 29%), -0.4184672341em 2.2840023178em 10.5392050614px hsl(220, 78%, 29%), 1.0093319857em 2.7009639316em 10.9387335371px hsl(220, 78%, 29%), 1.5721684404em 1.4431679266em 10.3711237528px hsl(220, 78%, 29%), -0.0681265434em 0.4532118014em 11.8497838475px hsl(220, 78%, 29%), 0.5414178732em 1.22094667em 10.6255058018px hsl(220, 78%, 29%), 2.0557163314em 2.0613948413em 11.6331138177px hsl(220, 78%, 29%), 1.3511266794em 1.7102638074em 10.7595843321px hsl(220, 78%, 29%), -0.1557674514em 3.0714743504em 11.6182990649px hsl(220, 78%, 29%);
   animation-duration: 44s;
   animation-delay: -27s;
 }
 
 body::after {
-  text-shadow: -0.4487733196em 1.6160520054em 23.3462462606px hsl(220, 78%, 29%), 2.0266470804em 1.5755753403em 23.6717669151px hsl(220, 78%, 29%), 0.421331103em 1.5751067951em 17.5161946325px hsl(220, 78%, 29%), -0.1577439579em 3.0868914429em 24.4912400542px hsl(220, 78%, 29%), 2.4164365121em -0.1673362948em 15.3186096471px hsl(220, 78%, 29%), -0.0028876142em 1.5928853365em 19.285709062px hsl(220, 78%, 29%), 0.4695492944em 2.4743366359em 13.4304788642px hsl(220, 78%, 29%), 1.3521508015em 0.1472708411em 20.7737040196px hsl(220, 78%, 29%), 0.9294957365em -0.1202464571em 13.8387393812px hsl(220, 78%, 29%), 0.2208729527em 0.1965852144em 17.795743076px hsl(220, 78%, 29%), 3.0735476882em 0.5369642985em 17.7796374734px hsl(220, 78%, 29%), -0.3814896937em 2.8983024268em 24.4906194273px hsl(220, 78%, 29%), 2.017165924em -0.3753136028em 16.9589132513px hsl(220, 78%, 29%), 1.1309310122em 1.9523122924em 20.7174367617px hsl(220, 78%, 29%), 2.3107416848em 3.1215266893em 17.5729606766px hsl(220, 78%, 29%), 2.8861638885em 2.7290003144em 23.3305012572px hsl(220, 78%, 29%), -0.3670591819em 2.1188947921em 23.7513098099px hsl(220, 78%, 29%), 1.1790881934em 2.575462481em 24.3578281883px hsl(220, 78%, 29%), -0.2837456552em 1.9601966793em 19.097751245px hsl(220, 78%, 29%), 3.2555317566em 0.2073261124em 20.2790879366px hsl(220, 78%, 29%), 1.7732063074em -0.1893505569em 22.2501248355px hsl(220, 78%, 29%), 2.5416164972em 1.3681275555em 16.3191527645px hsl(220, 78%, 29%), 1.0235802247em 1.2156683402em 20.4856370613px hsl(220, 78%, 29%), 1.7781855533em 0.1094909487em 13.0283237156px hsl(220, 78%, 29%), 2.6937293634em 0.8494394322em 15.8651981157px hsl(220, 78%, 29%), 0.5583215523em 2.6276787344em 17.2324368759px hsl(220, 78%, 29%), 2.0128899565em 1.9076411138em 19.760136129px hsl(220, 78%, 29%), 1.5550277413em 1.934045569em 17.5383984628px hsl(220, 78%, 29%), 3.3420672695em 1.2846383583em 19.4735594566px hsl(220, 78%, 29%), 2.2001921327em 0.4030008896em 24.9707108721px hsl(220, 78%, 29%), 0.0896367488em 2.0998046338em 19.8585415868px hsl(220, 78%, 29%), -0.2749065266em 1.6722660497em 13.3701398513px hsl(220, 78%, 29%), 2.5128675926em 0.0807141701em 21.7680130543px hsl(220, 78%, 29%), 3.3145715781em 0.2687256301em 15.3166760756px hsl(220, 78%, 29%), 1.0805232031em 3.3625462716em 15.9804458777px hsl(220, 78%, 29%), 0.6458680666em 1.9069747567em 14.7116784594px hsl(220, 78%, 29%), 1.5511151511em 0.9034700358em 19.9118642168px hsl(220, 78%, 29%), 2.1005770803em -0.2243146212em 17.3801201585px hsl(220, 78%, 29%), 0.2746651122em 3.2525055945em 13.6574070141px hsl(220, 78%, 29%), -0.3389258601em 3.2723479069em 16.6550908769px hsl(220, 78%, 29%), 0.325963751em 2.2104701183em 20.8685959492px hsl(220, 78%, 29%);
+  text-shadow: 3.1882080585em 0.6790198757em 10.2334649105px hsl(220, 78%, 29%), 0.6842814039em 2.7846963481em 11.2613895466px hsl(220, 78%, 29%), 1.5883865187em -0.0000985951em 10.6584910882px hsl(220, 78%, 29%), 1.3878351215em 2.5281023632em 11.1922619655px hsl(220, 78%, 29%), -0.0896986666em 2.0078483268em 10.7044846722px hsl(220, 78%, 29%), 0.2250894695em 2.7834084749em 10.158070304px hsl(220, 78%, 29%), 3.1388030927em 1.3866064631em 11.1981184567px hsl(220, 78%, 29%), 0.4610766702em 1.7714091344em 11.9015775618px hsl(220, 78%, 29%), -0.4279397006em 2.7971668933em 10.2231676085px hsl(220, 78%, 29%), -0.1456127889em 1.919093402em 11.2652211614px hsl(220, 78%, 29%), 0.0640779123em 0.5668963224em 11.3989326537px hsl(220, 78%, 29%);
   animation-duration: 43s;
   animation-delay: -32s;
 }
 
 head::before {
-  text-shadow: -0.0034595425em 2.9357714435em 21.1059081485px hsl(220, 78%, 29%), 0.2051798593em 3.3523170785em 23.1268239225px hsl(220, 78%, 29%), 2.9466666916em 2.0642564902em 13.7727857733px hsl(220, 78%, 29%), 1.9126554393em 2.2478662241em 15.8122082555px hsl(220, 78%, 29%), 2.3198967583em 1.4672717794em 20.9740992385px hsl(220, 78%, 29%), 2.2899162275em -0.4490279633em 22.9652682246px hsl(220, 78%, 29%), 0.0928549509em 3.3499217164em 15.0363473495px hsl(220, 78%, 29%), -0.4777837461em 0.6203925268em 18.5221722595px hsl(220, 78%, 29%), 1.0974990507em 0.4671793842em 18.8760134941px hsl(220, 78%, 29%), 1.9494103724em 2.7116194592em 19.6106393727px hsl(220, 78%, 29%), 1.9468974398em 1.0769808096em 17.6729396941px hsl(220, 78%, 29%), 2.5061048404em 3.0902696961em 15.5789261906px hsl(220, 78%, 29%), 1.8760734998em 1.5001669807em 23.8124594617px hsl(220, 78%, 29%), 3.0260489118em 0.3364602076em 24.4079057993px hsl(220, 78%, 29%), 3.3942853211em 2.407628388em 13.4802088053px hsl(220, 78%, 29%), 2.3024830882em 0.124219713em 24.3359270999px hsl(220, 78%, 29%), 1.7303773623em 2.7969096534em 23.5145794038px hsl(220, 78%, 29%), 3.1460427532em 3.3007001768em 15.4243195012px hsl(220, 78%, 29%), 0.3510837387em 0.1228771845em 24.3874877279px hsl(220, 78%, 29%), 2.2723881684em 0.4749205073em 13.1599362589px hsl(220, 78%, 29%), -0.0004400556em 2.2555511832em 18.4667423102px hsl(220, 78%, 29%), 0.2910570919em -0.1064813751em 19.6068180893px hsl(220, 78%, 29%), 1.7416027023em 2.2627008917em 19.4632449799px hsl(220, 78%, 29%), 2.1898835098em 2.6665248562em 19.1456702663px hsl(220, 78%, 29%), 3.3692301476em 1.3310980826em 13.1162512354px hsl(220, 78%, 29%), -0.3999445714em 0.2988582686em 16.6692712028px hsl(220, 78%, 29%), -0.2926581201em 1.0267677954em 14.3757421169px hsl(220, 78%, 29%), -0.1980750864em 3.1330956939em 21.4744505535px hsl(220, 78%, 29%), 1.3940873844em 1.8367077568em 14.7870790363px hsl(220, 78%, 29%), 3.0815183346em -0.3811207922em 18.4996909052px hsl(220, 78%, 29%), -0.171964455em 0.8572445948em 24.1262874873px hsl(220, 78%, 29%), 2.0073109194em 2.4516763422em 13.7037659787px hsl(220, 78%, 29%), 0.2030532939em 2.3796194116em 19.529489696px hsl(220, 78%, 29%), 1.0251428235em 1.0805380642em 20.6440119576px hsl(220, 78%, 29%), 3.3731504415em -0.4887903551em 21.0039782985px hsl(220, 78%, 29%), 0.3454359107em -0.0775763843em 22.4780510466px hsl(220, 78%, 29%), 0.9856975343em 2.569336089em 24.2225276756px hsl(220, 78%, 29%), -0.1233920101em 1.2626478816em 17.202066221px hsl(220, 78%, 29%), 1.672240083em 0.498266662em 19.6417263374px hsl(220, 78%, 29%), 2.8296615617em 0.2772619298em 14.3188571512px hsl(220, 78%, 29%), 0.4425740574em 1.0858122204em 22.2724775504px hsl(220, 78%, 29%);
+  text-shadow: 1.2896835731em 2.718852143em 11.4807014475px hsl(220, 78%, 29%), 1.3245849744em -0.277350531em 11.0314655295px hsl(220, 78%, 29%), -0.3911635637em 1.6698274765em 10.5041901587px hsl(220, 78%, 29%), 1.7050544159em 0.7248480394em 11.4872969362px hsl(220, 78%, 29%), 1.2415845977em 3.1951147268em 10.9183351905px hsl(220, 78%, 29%), 1.4532484504em 0.1457691823em 10.2588966987px hsl(220, 78%, 29%), 2.6659978682em 2.1672245284em 11.8925641943px hsl(220, 78%, 29%), 1.9314364252em 2.3157862976em 11.9560906494px hsl(220, 78%, 29%), 0.9844503726em 1.7436076011em 10.5152846737px hsl(220, 78%, 29%), 1.519957213em 2.7279596592em 10.2278238116px hsl(220, 78%, 29%), 1.8643426036em 2.6326728034em 11.0080353899px hsl(220, 78%, 29%);
   animation-duration: 42s;
   animation-delay: -23s;
 }
 
 head::after {
-  text-shadow: 0.1183086018em 0.0096090857em 14.7995707472px hsl(220, 78%, 29%), -0.3467859938em 2.9379840329em 20.678564656px hsl(220, 78%, 29%), 2.008035122em 3.1652907913em 16.7111387545px hsl(220, 78%, 29%), 0.2555635383em 0.6577397388em 23.5740613109px hsl(220, 78%, 29%), 2.7990791661em 1.0380722599em 15.6157782442px hsl(220, 78%, 29%), 0.0660698146em 1.2720825125em 13.3270139601px hsl(220, 78%, 29%), 0.591011141em 3.0232904597em 18.3377115733px hsl(220, 78%, 29%), 1.5331902853em 2.2416183291em 21.3063844835px hsl(220, 78%, 29%), 2.1693628814em 3.2646355239em 14.7959520616px hsl(220, 78%, 29%), 2.7178178342em 3.0713010117em 22.9572009875px hsl(220, 78%, 29%), 0.4239559394em 2.7424784318em 20.7849883886px hsl(220, 78%, 29%), 0.2085357994em -0.2434355707em 14.933585279px hsl(220, 78%, 29%), 2.4904139158em 3.1483490451em 13.2635121244px hsl(220, 78%, 29%), 2.352096726em 2.1470566289em 18.0196697095px hsl(220, 78%, 29%), 0.5364863876em 1.6545112741em 17.3236502532px hsl(220, 78%, 29%), 0.7614877324em 3.3051753026em 17.6593271514px hsl(220, 78%, 29%), 2.909059187em 2.6646539937em 19.5041960761px hsl(220, 78%, 29%), 1.0867691744em 2.8706685173em 20.0781209141px hsl(220, 78%, 29%), 1.8912057137em 1.5209572588em 23.4749399824px hsl(220, 78%, 29%), 0.1701533585em 0.8247473861em 14.1150685505px hsl(220, 78%, 29%), 2.2433824177em 0.8926076321em 24.0312163116px hsl(220, 78%, 29%), 0.751777117em 1.6977220623em 21.7226573006px hsl(220, 78%, 29%), 1.7408856039em 1.8218672907em 15.4469310863px hsl(220, 78%, 29%), 1.0246643494em 2.8569123809em 15.7909529924px hsl(220, 78%, 29%), 1.5766613068em 1.8709216879em 24.545055716px hsl(220, 78%, 29%), 0.7501297928em 0.4305823404em 23.7385700565px hsl(220, 78%, 29%), 1.6889831172em 1.9959816759em 22.3679258777px hsl(220, 78%, 29%), 2.1723737483em -0.4002674023em 18.8199040662px hsl(220, 78%, 29%), 1.0106721425em 3.2559990527em 15.1621104419px hsl(220, 78%, 29%), 2.2582962192em -0.4268357269em 13.1678558127px hsl(220, 78%, 29%), 3.4945549827em 1.381350287em 18.161342497px hsl(220, 78%, 29%), 1.651812851em 2.3175245896em 24.483456305px hsl(220, 78%, 29%), 1.3404141467em 2.6175376302em 23.6507820868px hsl(220, 78%, 29%), -0.0038489188em -0.0996470947em 16.6696929192px hsl(220, 78%, 29%), 0.8055901608em 0.1279598288em 22.9186525204px hsl(220, 78%, 29%), 1.6827580633em 3.4837110767em 16.8317939917px hsl(220, 78%, 29%), 2.8062260092em 1.3441061753em 16.214992827px hsl(220, 78%, 29%), 2.3813750948em 1.0147731827em 20.5262662922px hsl(220, 78%, 29%), 0.633164661em 2.2954398894em 17.7604269379px hsl(220, 78%, 29%), 2.9528455951em 2.9819366479em 16.9146294387px hsl(220, 78%, 29%), 2.9405228224em 1.3992156801em 17.9547292668px hsl(220, 78%, 29%);
+  text-shadow: -0.4642632503em 2.808696379em 11.0928433783px hsl(220, 78%, 29%), 0.6106758699em 2.4461042592em 10.3048889308px hsl(220, 78%, 29%), 2.1790357549em -0.3009092793em 10.8505763515px hsl(220, 78%, 29%), 1.9576268143em 1.519912453em 10.9124651931px hsl(220, 78%, 29%), 2.3559461893em -0.4929901315em 10.6536524046px hsl(220, 78%, 29%), 3.0803574156em 3.4289852641em 10.7450104366px hsl(220, 78%, 29%), 1.4528998599em 2.9742379151em 10.2041804125px hsl(220, 78%, 29%), 0.8814366387em -0.0422227997em 10.1901396191px hsl(220, 78%, 29%), 1.0684358505em 3.2239005908em 11.3796306203px hsl(220, 78%, 29%), 3.1623824623em 3.195763451em 10.668240148px hsl(220, 78%, 29%), 0.0661714621em 1.8771624148em 10.8054394378px hsl(220, 78%, 29%);
   animation-duration: 41s;
   animation-delay: -19s;
 }
@@ -172,7 +172,6 @@ head::after {
   background-color: #fff;
   border-radius: 20px;
   border: 2px solid #E4EAF7;
-  box-shadow: 7px 7px 30px 0px rgba(16, 55, 132, 0.0588235294);
   box-shadow: -7px -7px 30px 0px rgba(16, 55, 132, 0.0588235294);
 }
 
@@ -212,20 +211,6 @@ head::after {
   width: 720px;
 }
 
-/* 
-.carousel-control-prev {
-  display: block;
-  position: absolute;
-  z-index: 1;
-}
-.carousel__arrows {
-  display: block;
-  background: none;
-  background-color: black;
-  width: 50%;
-  height: 100%;
-  z-index: 1;
-} */
 .carousel-indicators {
   width: 115px;
   margin: 0 auto 34px auto;
@@ -329,6 +314,58 @@ head::after {
   color: #000;
   font-size: 18px;
   line-height: 18px;
+}
+
+.popular__description {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 40px 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #5078B9;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.popular__description:hover {
+  opacity: 0.9;
+  display: block;
+}
+
+.popular__description-text {
+  line-height: 16px;
+  color: #fff;
+}
+.popular__description-text:last-child {
+  text-decoration: underline;
+}
+.popular__description-text:last-child:hover {
+  color: #fff;
+}
+
+.popular_catalog {
+  min-width: 100%;
+  max-width: 100%;
+  padding: 50px calc((100% - 1520px) / 2);
+  margin: 0;
+  background-color: #F9F9F9;
+}
+.popular_catalog .popular__title {
+  margin-top: 0;
+}
+.popular_catalog .popular__container {
+  grid-template-rows: repeat(3, 300px);
+}
+.popular_catalog .popular__item:hover .popular__subtitle {
+  display: none;
+}
+.popular_catalog .popular__item:hover .popular__description {
+  display: flex;
 }
 
 .catalog {
@@ -484,13 +521,14 @@ head::after {
 }
 
 .catalog__subtext {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: block;
+  width: 100%;
+  text-align: end;
 }
 
 .catalog__description {
   text-decoration: underline;
+  float: left;
 }
 .catalog__description:hover {
   opacity: 0.8;
@@ -507,6 +545,7 @@ head::after {
   position: absolute;
   top: 20px;
   right: 25px;
+  z-index: 3;
   background: url(./img/like-blue.svg) center/contain no-repeat;
 }
 .catalog__like.active {
@@ -557,6 +596,9 @@ head::after {
   padding: 56px calc((100% - 1520px) / 2);
   border-radius: 0 0 20px 20px;
 }
+.projects.sub {
+  border-radius: 0;
+}
 
 .projects__container {
   display: flex;
@@ -588,8 +630,9 @@ head::after {
 }
 
 .projects__overlay {
-  top: 60px;
+  top: 15%;
   right: 60px;
+  height: 80%;
   position: absolute;
 }
 
@@ -744,58 +787,6 @@ head::after {
   background: url(./img/arr-right.svg) center/contain no-repeat;
 }
 
-.popular__description {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  padding: 40px 30px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #5078B9;
-  opacity: 0;
-  transition: all 0.2s ease-in-out;
-}
-.popular__description:hover {
-  opacity: 0.9;
-  display: block;
-}
-
-.popular__description-text {
-  line-height: 16px;
-  color: #fff;
-}
-.popular__description-text:last-child {
-  text-decoration: underline;
-}
-.popular__description-text:last-child:hover {
-  color: #fff;
-}
-
-.popular_catalog {
-  min-width: 100%;
-  max-width: 100%;
-  padding: 50px calc((100% - 1520px) / 2);
-  margin: 0;
-  background-color: #F9F9F9;
-}
-.popular_catalog .popular__title {
-  margin-top: 0;
-}
-.popular_catalog .popular__container {
-  grid-template-rows: repeat(3, 300px);
-}
-.popular_catalog .popular__item:hover .popular__subtitle {
-  display: none;
-}
-.popular_catalog .popular__item:hover .popular__description {
-  display: flex;
-}
-
 .product {
   background-color: #F9F9F9;
   padding: 56px calc((100% - 1520px) / 2);
@@ -945,14 +936,67 @@ head::after {
 .product__sidebar-main {
   height: 300px;
   width: 270px;
+  padding: 20px;
   border: 2px solid #E4EAF7;
   border-radius: 20px;
-  box-shadow: 7px 7px 30px 0px rgba(16, 55, 132, 0.0588235294);
   box-shadow: -7px -7px 30px 0px rgba(16, 55, 132, 0.0588235294);
 }
 
+.product__price {
+  font-size: 28px;
+  line-height: 35px;
+  color: #D1000F;
+  margin: 0;
+}
+.product__price.sub {
+  font-size: 20px;
+  line-height: 25px;
+  color: #000;
+  text-decoration: line-through;
+}
+
+.product__subtext {
+  margin: 0 0 16px 0;
+}
+
+.product__counter {
+  height: 35px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.product__counter p {
+  margin: 0;
+}
+
+.product__counter-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  line-height: 35px;
+  border: 2px solid #E4EAF7;
+  padding: 0 14px;
+  border-radius: 20px 0 0 20px;
+}
+.product__counter-btn.right {
+  border-radius: 0 20px 20px 0;
+}
+
+.product__input {
+  width: 68px;
+  height: 39px;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  border-top: 2px solid #E4EAF7;
+  border-bottom: 2px solid #E4EAF7;
+}
+
 .product__sidebar-btn {
-  width: 100%;
+  min-width: 100%;
   padding: 14px 0;
   text-align: center;
   font-size: 20px;
@@ -960,7 +1004,6 @@ head::after {
   font-weight: 600;
   border-radius: 20px;
   border: 2px solid #E4EAF7;
-  box-shadow: 7px 7px 30px 0px rgba(16, 55, 132, 0.0588235294);
   box-shadow: -7px -7px 30px 0px rgba(16, 55, 132, 0.0588235294);
 }
 .product__sidebar-btn:hover {
@@ -973,4 +1016,16 @@ head::after {
   color: #fff;
   background-color: #5078B9;
   border: none;
+  padding: 20px 15px;
+  margin-bottom: 15px;
+}
+
+.product__desc-info {
+  text-align: center;
+  line-height: 25px;
+}
+
+.description {
+  background-color: #F9F9F9;
+  padding: 60px calc((100% - 1520px) / 2);
 }
