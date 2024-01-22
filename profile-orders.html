@@ -27,9 +27,12 @@
         <input class="header__input" placeholder="Поиск по сайту" />
 
         <div class="header__icons">
-          <a class="header__icon" href="./favorite.html"><img class="header__icon" src="./img/like.svg" alt="избранное" /></a>
-          <a class="header__icon" href="./basket.html"><img class="header__icon" src="./img/basket.svg" alt="корзина" /></a>
-          <a class="header__icon" href="./profile.html"><img class="header__icon" src="./img/profile.svg" alt="ваш профиль" /></a>
+          <a class="header__icon" href="./favorite.html"><img class="header__icon" src="./img/like.svg"
+              alt="избранное" /></a>
+          <a class="header__icon" href="./basket.html"><img class="header__icon" src="./img/basket.svg"
+              alt="корзина" /></a>
+          <a class="header__icon" href="./profile.html"><img class="header__icon" src="./img/profile.svg"
+              alt="ваш профиль" /></a>
         </div>
       </div>
 
@@ -71,9 +74,461 @@
             <button class="profile__tp-btn">Заказать звонок</button>
           </div>
         </div>
-        
-        <div class="d-flex flex-column w-100">
-          
+
+        <div class="d-flex flex-column w-100 basket">
+          <h2 class="profile__subtitle">Мои заказы</h2>
+
+          <div class="basket__container orders">
+            <article class="order">
+              <div class="order__header">
+                <button class="order__select" type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1"></button>
+                <div class="d-flex flex-row">
+                  <h3 class="order__title">№123456789</h3>
+                  <p class="order__subtitle">31.12.2023</p>
+                </div>
+                <div class="d-flex flex-row align-items-center">
+                  <h3 class="order__status active">Получено</h3>
+                  <p class="order__price">Сумма заказа: 28 560 ₽ </p>
+                </div>
+              </div>
+
+              <ul class="basket__list collapse multi-collapse" id="multiCollapseExample1">
+                <li class="basket__item">
+                  <img class="basket__img" src="./img/product-main.png" alt="изображение товара">
+                  <div class="basket__description">
+                    <p class="basket__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+                    <div class="basket__info">
+                      <button class="basket__like"></button>
+                      <button class="basket__delete"></button>
+                      <div class="d-flex justify-content-between w-100 align-items-center">
+
+                        <p class="basket__id">Артикул: SA-C20-08</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="basket__price">4 760 ₽</h3>
+                  <div class="basket__counter product__counter">
+                    <div class="d-flex">
+                      <button class="product__counter-btn"
+                        onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                      <input type="number" class="product__input" value="2">
+                      <button class="product__counter-btn right"
+                        onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="basket__item">
+                  <img class="basket__img" src="./img/product-main.png" alt="изображение товара">
+                  <div class="basket__description">
+                    <p class="basket__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+                    <div class="basket__info">
+                      <button class="basket__like"></button>
+                      <button class="basket__delete"></button>
+                      <div class="d-flex justify-content-between w-100 align-items-center">
+
+                        <p class="basket__id">Артикул: SA-C20-08</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="basket__price">4 760 ₽</h3>
+                  <div class="basket__counter product__counter">
+                    <div class="d-flex">
+                      <button class="product__counter-btn"
+                        onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                      <input type="number" class="product__input" value="2">
+                      <button class="product__counter-btn right"
+                        onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="basket__item">
+                  <img class="basket__img" src="./img/product-main.png" alt="изображение товара">
+                  <div class="basket__description">
+                    <p class="basket__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+                    <div class="basket__info">
+                      <button class="basket__like"></button>
+                      <button class="basket__delete"></button>
+                      <div class="d-flex justify-content-between w-100 align-items-center">
+
+                        <p class="basket__id">Артикул: SA-C20-08</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="basket__price">4 760 ₽</h3>
+                  <div class="basket__counter product__counter">
+                    <div class="d-flex">
+                      <button class="product__counter-btn"
+                        onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                      <input type="number" class="product__input" value="2">
+                      <button class="product__counter-btn right"
+                        onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="basket__item">
+                  <img class="basket__img" src="./img/product-main.png" alt="изображение товара">
+                  <div class="basket__description">
+                    <p class="basket__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+                    <div class="basket__info">
+                      <button class="basket__like"></button>
+                      <button class="basket__delete"></button>
+                      <div class="d-flex justify-content-between w-100 align-items-center">
+
+                        <p class="basket__id">Артикул: SA-C20-08</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="basket__price">4 760 ₽</h3>
+                  <div class="basket__counter product__counter">
+                    <div class="d-flex">
+                      <button class="product__counter-btn"
+                        onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                      <input type="number" class="product__input" value="2">
+                      <button class="product__counter-btn right"
+                        onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="basket__item">
+                  <img class="basket__img" src="./img/product-main.png" alt="изображение товара">
+                  <div class="basket__description">
+                    <p class="basket__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+                    <div class="basket__info">
+                      <button class="basket__like"></button>
+                      <button class="basket__delete"></button>
+                      <div class="d-flex justify-content-between w-100 align-items-center">
+
+                        <p class="basket__id">Артикул: SA-C20-08</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="basket__price">4 760 ₽</h3>
+                  <div class="basket__counter product__counter">
+                    <div class="d-flex">
+                      <button class="product__counter-btn"
+                        onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                      <input type="number" class="product__input" value="2">
+                      <button class="product__counter-btn right"
+                        onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="order__footer">
+                <div class="d-flex">
+                  <img class="order__icon" src="./img/doc.svg" alt="иконка документа">
+                  <a class="order__link" href="">Документа по заказу</a>
+                </div>
+                <div class="d-flex">
+                  <img class="order__icon" src="./img/info.svg" alt="иконка документа">
+                  <a class="order__link" href="">Подать рекламацию</a>
+                </div>
+              </div>
+
+            </article>
+            
+            <article class="order">
+              <div class="order__header">
+                <button class="order__select" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2"></button>
+                <div class="d-flex flex-row">
+                  <h3 class="order__title">№123456789</h3>
+                  <p class="order__subtitle">31.12.2023</p>
+                </div>
+                <div class="d-flex flex-row align-items-center">
+                  <h3 class="order__status active">Получено</h3>
+                  <p class="order__price">Сумма заказа: 28 560 ₽ </p>
+                </div>
+              </div>
+
+              <ul class="basket__list collapse multi-collapse" id="multiCollapseExample2">
+                <li class="basket__item">
+                  <img class="basket__img" src="./img/product-main.png" alt="изображение товара">
+                  <div class="basket__description">
+                    <p class="basket__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+                    <div class="basket__info">
+                      <button class="basket__like"></button>
+                      <button class="basket__delete"></button>
+                      <div class="d-flex justify-content-between w-100 align-items-center">
+
+                        <p class="basket__id">Артикул: SA-C20-08</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="basket__price">4 760 ₽</h3>
+                  <div class="basket__counter product__counter">
+                    <div class="d-flex">
+                      <button class="product__counter-btn"
+                        onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                      <input type="number" class="product__input" value="2">
+                      <button class="product__counter-btn right"
+                        onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="basket__item">
+                  <img class="basket__img" src="./img/product-main.png" alt="изображение товара">
+                  <div class="basket__description">
+                    <p class="basket__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+                    <div class="basket__info">
+                      <button class="basket__like"></button>
+                      <button class="basket__delete"></button>
+                      <div class="d-flex justify-content-between w-100 align-items-center">
+
+                        <p class="basket__id">Артикул: SA-C20-08</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="basket__price">4 760 ₽</h3>
+                  <div class="basket__counter product__counter">
+                    <div class="d-flex">
+                      <button class="product__counter-btn"
+                        onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                      <input type="number" class="product__input" value="2">
+                      <button class="product__counter-btn right"
+                        onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="basket__item">
+                  <img class="basket__img" src="./img/product-main.png" alt="изображение товара">
+                  <div class="basket__description">
+                    <p class="basket__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+                    <div class="basket__info">
+                      <button class="basket__like"></button>
+                      <button class="basket__delete"></button>
+                      <div class="d-flex justify-content-between w-100 align-items-center">
+
+                        <p class="basket__id">Артикул: SA-C20-08</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="basket__price">4 760 ₽</h3>
+                  <div class="basket__counter product__counter">
+                    <div class="d-flex">
+                      <button class="product__counter-btn"
+                        onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                      <input type="number" class="product__input" value="2">
+                      <button class="product__counter-btn right"
+                        onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="basket__item">
+                  <img class="basket__img" src="./img/product-main.png" alt="изображение товара">
+                  <div class="basket__description">
+                    <p class="basket__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+                    <div class="basket__info">
+                      <button class="basket__like"></button>
+                      <button class="basket__delete"></button>
+                      <div class="d-flex justify-content-between w-100 align-items-center">
+
+                        <p class="basket__id">Артикул: SA-C20-08</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="basket__price">4 760 ₽</h3>
+                  <div class="basket__counter product__counter">
+                    <div class="d-flex">
+                      <button class="product__counter-btn"
+                        onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                      <input type="number" class="product__input" value="2">
+                      <button class="product__counter-btn right"
+                        onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="basket__item">
+                  <img class="basket__img" src="./img/product-main.png" alt="изображение товара">
+                  <div class="basket__description">
+                    <p class="basket__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+                    <div class="basket__info">
+                      <button class="basket__like"></button>
+                      <button class="basket__delete"></button>
+                      <div class="d-flex justify-content-between w-100 align-items-center">
+
+                        <p class="basket__id">Артикул: SA-C20-08</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="basket__price">4 760 ₽</h3>
+                  <div class="basket__counter product__counter">
+                    <div class="d-flex">
+                      <button class="product__counter-btn"
+                        onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                      <input type="number" class="product__input" value="2">
+                      <button class="product__counter-btn right"
+                        onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="order__footer">
+                <div class="d-flex">
+                  <img class="order__icon" src="./img/doc.svg" alt="иконка документа">
+                  <a class="order__link" href="">Документа по заказу</a>
+                </div>
+                <div class="d-flex">
+                  <img class="order__icon" src="./img/info.svg" alt="иконка документа">
+                  <a class="order__link" href="">Подать рекламацию</a>
+                </div>
+              </div>
+
+            </article>
+
+            <article class="order">
+              <div class="order__header">
+                <button class="order__select" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3"></button>
+                <div class="d-flex flex-row">
+                  <h3 class="order__title">№123456789</h3>
+                  <p class="order__subtitle">31.12.2023</p>
+                </div>
+                <div class="d-flex flex-row align-items-center">
+                  <h3 class="order__status">Сборка</h3>
+                  <p class="order__price">Сумма заказа: 28 560 ₽ </p>
+                </div>
+              </div>
+
+              <ul class="basket__list collapse multi-collapse" id="multiCollapseExample3">
+                <li class="basket__item">
+                  <img class="basket__img" src="./img/product-main.png" alt="изображение товара">
+                  <div class="basket__description">
+                    <p class="basket__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+                    <div class="basket__info">
+                      <button class="basket__like"></button>
+                      <button class="basket__delete"></button>
+                      <div class="d-flex justify-content-between w-100 align-items-center">
+
+                        <p class="basket__id">Артикул: SA-C20-08</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="basket__price">4 760 ₽</h3>
+                  <div class="basket__counter product__counter">
+                    <div class="d-flex">
+                      <button class="product__counter-btn"
+                        onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                      <input type="number" class="product__input" value="2">
+                      <button class="product__counter-btn right"
+                        onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="basket__item">
+                  <img class="basket__img" src="./img/product-main.png" alt="изображение товара">
+                  <div class="basket__description">
+                    <p class="basket__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+                    <div class="basket__info">
+                      <button class="basket__like"></button>
+                      <button class="basket__delete"></button>
+                      <div class="d-flex justify-content-between w-100 align-items-center">
+
+                        <p class="basket__id">Артикул: SA-C20-08</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="basket__price">4 760 ₽</h3>
+                  <div class="basket__counter product__counter">
+                    <div class="d-flex">
+                      <button class="product__counter-btn"
+                        onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                      <input type="number" class="product__input" value="2">
+                      <button class="product__counter-btn right"
+                        onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="basket__item">
+                  <img class="basket__img" src="./img/product-main.png" alt="изображение товара">
+                  <div class="basket__description">
+                    <p class="basket__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+                    <div class="basket__info">
+                      <button class="basket__like"></button>
+                      <button class="basket__delete"></button>
+                      <div class="d-flex justify-content-between w-100 align-items-center">
+
+                        <p class="basket__id">Артикул: SA-C20-08</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="basket__price">4 760 ₽</h3>
+                  <div class="basket__counter product__counter">
+                    <div class="d-flex">
+                      <button class="product__counter-btn"
+                        onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                      <input type="number" class="product__input" value="2">
+                      <button class="product__counter-btn right"
+                        onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="basket__item">
+                  <img class="basket__img" src="./img/product-main.png" alt="изображение товара">
+                  <div class="basket__description">
+                    <p class="basket__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+                    <div class="basket__info">
+                      <button class="basket__like"></button>
+                      <button class="basket__delete"></button>
+                      <div class="d-flex justify-content-between w-100 align-items-center">
+
+                        <p class="basket__id">Артикул: SA-C20-08</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="basket__price">4 760 ₽</h3>
+                  <div class="basket__counter product__counter">
+                    <div class="d-flex">
+                      <button class="product__counter-btn"
+                        onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                      <input type="number" class="product__input" value="2">
+                      <button class="product__counter-btn right"
+                        onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="basket__item">
+                  <img class="basket__img" src="./img/product-main.png" alt="изображение товара">
+                  <div class="basket__description">
+                    <p class="basket__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+                    <div class="basket__info">
+                      <button class="basket__like"></button>
+                      <button class="basket__delete"></button>
+                      <div class="d-flex justify-content-between w-100 align-items-center">
+
+                        <p class="basket__id">Артикул: SA-C20-08</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="basket__price">4 760 ₽</h3>
+                  <div class="basket__counter product__counter">
+                    <div class="d-flex">
+                      <button class="product__counter-btn"
+                        onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                      <input type="number" class="product__input" value="2">
+                      <button class="product__counter-btn right"
+                        onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="order__footer">
+                <div class="d-flex">
+                  <img class="order__icon" src="./img/doc.svg" alt="иконка документа">
+                  <a class="order__link" href="">Документа по заказу</a>
+                </div>
+                <div class="d-flex">
+                  <img class="order__icon" src="./img/info.svg" alt="иконка документа">
+                  <a class="order__link" href="">Подать рекламацию</a>
+                </div>
+              </div>
+
+            </article>
+          </div>
+
+
+
         </div>
       </div>
 
@@ -84,7 +539,7 @@
 
       <div class="projects__container">
 
-        
+
         <li class="catalog__item catalog__item_small">
           <div class="catalog__like"></div>
           <button class="catalog__basket"></button>
@@ -101,7 +556,7 @@
             </div>
           </a>
         </li>
-        
+
         <li class="catalog__item catalog__item_small">
           <div class="catalog__like"></div>
           <button class="catalog__basket"></button>

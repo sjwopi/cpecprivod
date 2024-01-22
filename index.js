@@ -42,4 +42,3 @@ document.querySelectorAll('.catalog__name').forEach((item, i) => {
     catalog.classList.remove('active');
   });
 })
-
