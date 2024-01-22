@@ -1570,6 +1570,9 @@ head::after {
       line-height: $font-line-xl;
       font-weight: 500;
     }
+    &.date {
+      font-weight: 400;
+    }
   }
 
   &__buy {
@@ -1682,12 +1685,15 @@ head::after {
   .basket__list {
     padding: 0 20px;
   }
+
   .collapse {
     display: none !important;
   }
+
   .collapse.show {
     display: flex !important;
   }
+
   &__header {
     padding: 20px;
   }
@@ -1713,14 +1719,17 @@ head::after {
     font-size: $font-size-s;
     line-height: $font-line-s;
     margin-right: 55px;
+
     &.active {
       border: 2px solid #116022;
       background-color: #1160221c;
     }
   }
+
   &__price {
     margin: 0;
   }
+
   &__select {
     position: absolute;
     top: 30px;
@@ -1739,12 +1748,14 @@ head::after {
     display: flex;
     gap: 78px;
   }
+
   &__icon {
     margin-right: 13px;
     width: 25px;
     height: 25px;
     object-fit: contain;
   }
+
   &__link {
     color: $dark-blue;
     text-decoration: underline;
@@ -1763,19 +1774,60 @@ head::after {
   background-color: $white;
   padding: 25px 40px;
   margin-bottom: 12px;
+
   .profile__checkbox_lbl {
     margin-right: 40px;
   }
+
   &__text {
     display: flex;
     flex-direction: row;
     max-width: 450px;
     margin-right: 40px;
   }
+
   &__delete {
     width: 31px;
     height: 36px;
     margin-right: 16px;
     background: url(./img/trash.svg) center/contain no-repeat;
+  }
+}
+
+.organization {
+  .profile__subtitle {
+    margin: 0;
+  }
+
+  &__form {
+    .profile__input {
+      padding: 0 50px;
+
+      &::placeholder {
+        color: $black;
+      }
+    }
+    .profile__save {
+      margin: 0 0 0 auto;
+    }
+  }
+  .order {
+    padding: 20px 40px 20px 20px;
+    p {
+      margin: 0;
+    }
+  }
+  &__title {
+    font-size: $font-size-l;
+    line-height: $font-line-l;
+    color: $dark-blue;
+    margin-bottom: 18px;
+  }
+  &__link {
+    margin-bottom: 20px;
+    &:last-child {
+      margin: 0;
+    }
+
   }
 }

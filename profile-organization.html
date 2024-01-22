@@ -27,9 +27,12 @@
         <input class="header__input" placeholder="Поиск по сайту" />
 
         <div class="header__icons">
-          <a class="header__icon" href="./favorite.html"><img class="header__icon" src="./img/like.svg" alt="избранное" /></a>
-          <a class="header__icon" href="./basket.html"><img class="header__icon" src="./img/basket.svg" alt="корзина" /></a>
-          <a class="header__icon" href="./profile.html"><img class="header__icon" src="./img/profile.svg" alt="ваш профиль" /></a>
+          <a class="header__icon" href="./favorite.html"><img class="header__icon" src="./img/like.svg"
+              alt="избранное" /></a>
+          <a class="header__icon" href="./basket.html"><img class="header__icon" src="./img/basket.svg"
+              alt="корзина" /></a>
+          <a class="header__icon" href="./profile.html"><img class="header__icon" src="./img/profile.svg"
+              alt="ваш профиль" /></a>
         </div>
       </div>
 
@@ -71,9 +74,96 @@
             <button class="profile__tp-btn">Заказать звонок</button>
           </div>
         </div>
-        
-        <div class="d-flex flex-column w-100">
-          
+
+        <div class="d-flex flex-column w-100 basket organization">
+          <div class="d-flex flex-row justify-content-between align-items-center">
+            <h2 class="profile__subtitle">Мои организации</h2>
+            <button class="profile__save" type="button" data-toggle="collapse" data-target="#multiCollapseExample1"
+              aria-expanded="false" aria-controls="multiCollapseExample1">Добавить организацию</button>
+          </div>
+
+          <div class="basket__container orders">
+
+            <form class="organization__form collapse multi-collapse" id="multiCollapseExample1">
+              <div class="d-flex flex-row">
+                <div class="d-flex flex-column w-50">
+                  <input type="text" class="form-control-plaintext profile__input" id="nameCompany"
+                    placeholder="Название юридического лица">
+                  <input type="text" class="form-control-plaintext profile__input" id="phone" placeholder="Телефон">
+                  <input type="text" class="form-control-plaintext profile__input" id="inn" placeholder="ИНН">
+                  <input type="text" class="form-control-plaintext profile__input" id="kpp" placeholder="КПП">
+                  <input type="text" class="form-control-plaintext profile__input" id="address"
+                    placeholder="Юридический адрес">
+                </div>
+
+                <div class="d-flex flex-column w-50">
+                  <input type="text" class="form-control-plaintext profile__input" id="bank" placeholder="Банк">
+                  <input type="text" class="form-control-plaintext profile__input" id="bik" placeholder="БИК">
+                  <input type="text" class="form-control-plaintext profile__input" id="corres"
+                    placeholder="Корреспондентский счёт">
+                  <input type="text" class="form-control-plaintext profile__input" id="rated"
+                    placeholder="Рассчетный счет">
+                  <button class="profile__save" type="button">Сохранить</button>
+                </div>
+              </div>
+
+
+            </form>
+
+            <article class="order">
+              <div class="d-flex flex-row justify-content-between">
+                <div class="d-flex flex-column">
+                  <h2 class="organization__title">ООО «СПЕЦПРИВОД»</h2>
+                  <p>ИНН: 5256181468</p>
+                  <p>КПП: Тест тест тест</p>
+                  <p>Адрес: Тест тест тест</p>
+                  <p>Банк: Тест тест тест</p>
+                  <p>БИК: Тест тест тест</p>
+                  <p>Корреспондентский счет: Тест тест тест</p>
+                  <p>Рассчетный счет: Тест тест тест</p>
+                  <p>Телевон: +7 (999) 999-99-99</p>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-start">
+                  <div class="organization__link">
+                    <img class="order__icon" src="./img/info.svg" alt="иконка документа">
+                    <a class="order__link" href="">Заказать акт сверки</a>
+                  </div>
+                  <div class="organization__link">
+                    <img class="order__icon" src="./img/info.svg" alt="иконка документа">
+                    <a class="order__link" href="">Удалить</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="order">
+              <div class="d-flex flex-row justify-content-between">
+                <div class="d-flex flex-column">
+                  <h2 class="organization__title">ООО «СПЕЦПРИВОД»</h2>
+                  <p>ИНН: 5256181468</p>
+                  <p>КПП: Тест тест тест</p>
+                  <p>Адрес: Тест тест тест</p>
+                  <p>Банк: Тест тест тест</p>
+                  <p>БИК: Тест тест тест</p>
+                  <p>Корреспондентский счет: Тест тест тест</p>
+                  <p>Рассчетный счет: Тест тест тест</p>
+                  <p>Телевон: +7 (999) 999-99-99</p>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-start">
+                  <div class="organization__link">
+                    <img class="order__icon" src="./img/info.svg" alt="иконка документа">
+                    <a class="order__link" href="">Заказать акт сверки</a>
+                  </div>
+                  <div class="organization__link">
+                    <img class="order__icon" src="./img/info.svg" alt="иконка документа">
+                    <a class="order__link" href="">Удалить</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            
+          </div>
+
         </div>
       </div>
 
@@ -84,7 +174,7 @@
 
       <div class="projects__container">
 
-        
+
         <li class="catalog__item catalog__item_small">
           <div class="catalog__like"></div>
           <button class="catalog__basket"></button>
@@ -101,7 +191,7 @@
             </div>
           </a>
         </li>
-        
+
         <li class="catalog__item catalog__item_small">
           <div class="catalog__like"></div>
           <button class="catalog__basket"></button>
