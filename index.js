@@ -1,3 +1,5 @@
+const catalog = document.querySelector('.catalog')
+const catalogNav = document.querySelector('.catalog__nav')
 const catalogGrid = document.querySelector('.catalog__grid');
 
 const deskW = 1520;
@@ -14,29 +16,30 @@ ctx.fillRect(0, 0, document.documentElement.clientWidth, document.documentElemen
 
 document.querySelectorAll('.catalog__name').forEach((item, i) => {
   item.addEventListener('mouseover', () => {
-    /* задний фон для названия */
+    /* для отрисовки "дырок" для каждого названия */
     let left = (document.documentElement.clientWidth - deskW) / 2;
     let top = item.offsetTop + padTop; 
     let right = padLeft;
     let bottom = item.getBoundingClientRect().height - 1;
     ctx.clearRect(left, top, right, bottom);
-  
+
     /* большой задний фон для списка товаров */
     top = padTop;
     left += padLeft;
     right = deskW - padLeft;
     bottom = 900;
     ctx.clearRect(left, top, right, bottom);
-
+    /* для уменьшения карточек */
     catalogGrid.classList.add('active');
+    /* для заднего фона */
+    catalog.classList.add('active');
   });
 
   item.addEventListener('mouseout', () => {
-    let left = (document.documentElement.clientWidth - deskW) / 2;
-    let top = item.offsetTop + padTop; 
-    let right = padLeft;
-    let bottom = item.getBoundingClientRect().height - 1;
-    ctx.fillRect(left, top, right, bottom);
+    /* при выходе мышки все закрашивается обратно и возвращаются стили */
+    ctx.fillRect(0, 0, document.documentElement.clientWidth, document.documentElement.clientHeight);
+    catalogGrid.classList.remove('active');
+    catalog.classList.remove('active');
   });
 })
 

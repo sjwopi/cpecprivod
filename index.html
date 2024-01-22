@@ -27,9 +27,12 @@
         <input class="header__input" placeholder="Поиск по сайту" />
 
         <div class="header__icons">
-          <img class="header__icon" src="./img/like.svg" alt="избранное" />
-          <img class="header__icon" src="./img/basket.svg" alt="корзина" />
-          <img class="header__icon" src="./img/profile.svg" alt="ваш профиль" />
+          <a class="header__icon" href="./favorite.html"><img class="header__icon" src="./img/like.svg"
+              alt="избранное" /></a>
+          <a class="header__icon" href="./basket.html"><img class="header__icon" src="./img/basket.svg"
+              alt="корзина" /></a>
+          <a class="header__icon" href="./profile.html"><img class="header__icon" src="./img/profile.svg"
+              alt="ваш профиль" /></a>
         </div>
       </div>
 
@@ -141,184 +144,186 @@
     </section>
 
     <section class="catalog">
-      
-      <canvas id="overlay-catalog"></canvas>
+
+      <canvas id="overlay-catalog" height="2000px"></canvas>
 
       <div class="catalog__sidebar">
         <h2 class="catalog__title">Каталог товаров</h2>
         <ul class="catalog__nav">
-          <li class="catalog__name"><a>Блоки подготовки воздуха</a></li>
-          <li class="catalog__name"><a>Пневматические распределители</a></li>
-          <li class="catalog__name"><a>Пневмоцилиндры</a></li>
-          <li class="catalog__name"><a>Приводы пневматические поворотные</a></li>
-          <li class="catalog__name"><a>Пневматические отсечные клапана</a></li>
-          <li class="catalog__name"><a>Клапаны электромагнитные пневматические</a></li>
-          <li class="catalog__name"><a>Запорная арматура</a></li>
-          <li class="catalog__name"><a>Пневмовибраторы</a></li>
-          <li class="catalog__name"><a>Пневмофитинги</a></li>
-          <li class="catalog__name"><a>Пневмодроссели</a></li>
-          <li class="catalog__name"><a>Пневмоглушители</a></li>
-          <li class="catalog__name"><a>Пневматические трубопроводы</a></li>
-          <li class="catalog__name"><a>Вакуумная техника</a></li>
+          <li class="catalog__name"><a href="./catalog.html">Блоки подготовки воздуха</a></li>
+          <li class="catalog__name"><a href="./catalog.html">Пневматические распределители</a></li>
+          <li class="catalog__name"><a href="./catalog.html">Пневмоцилиндры</a></li>
+          <li class="catalog__name"><a href="./catalog.html">Приводы пневматические поворотные</a></li>
+          <li class="catalog__name"><a href="./catalog.html">Пневматические отсечные клапана</a></li>
+          <li class="catalog__name"><a href="./catalog.html">Клапаны электромагнитные пневматические</a></li>
+          <li class="catalog__name"><a href="./catalog.html">Запорная арматура</a></li>
+          <li class="catalog__name"><a href="./catalog.html">Пневмовибраторы</a></li>
+          <li class="catalog__name"><a href="./catalog.html">Пневмофитинги</a></li>
+          <li class="catalog__name"><a href="./catalog.html">Пневмодроссели</a></li>
+          <li class="catalog__name"><a href="./catalog.html">Пневмоглушители</a></li>
+          <li class="catalog__name"><a href="./catalog.html">Пневматические трубопроводы</a></li>
+          <li class="catalog__name"><a href="./catalog.html">Вакуумная техника</a></li>
         </ul>
       </div>
       <div class="catalog__container">
         <h2 class="catalog__title">Сборные блоки</h2>
         <ul class="catalog__grid">
-          <!-- <div class="main-overlay"></div> -->
+
+          <li class="catalog__item">
+            <div class="catalog__like"></div>
+            <button class="catalog__basket"></button>
+            <a href="./catalogItem.html" class="catalog__content">
+              <img class="catalog__img" src="./img/card11.png" alt="фото детали">
+              <div>
+                <div class="catalog__buy">
+                  <span class="catalog__price">1 736 ₽</span>
+                </div>
+                <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+                <div class="catalog__subtext">
+                  <p class="catalog__description" href="./catalogItem.html">Подробнее</p>
+                  <span class="catalog__avlb-good">В наличии</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__like"> </div>
+            <button class="catalog__basket"></button>
+            <a href="./catalogItem.html" class="catalog__content">
+              <img class="catalog__img" src="./img/card12.png" alt="фото детали">
+              <div>
+                <div class="catalog__buy">
+                  <span class="catalog__price">3 626 ₽</span>
+                </div>
+                <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+                <div class="catalog__subtext">
+                  <p class="catalog__description" href="./catalogItem.html">Подробнее</p>
+                  <span>Под заказ</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__like"></div>
+            <button class="catalog__basket"></button>
+            <a href="./catalogItem.html" class="catalog__content">
+              <img class="catalog__img" src="./img/card11.png" alt="фото детали">
+              <div>
+                <div class="catalog__buy">
+                  <span class="catalog__price">1 736 ₽</span>
+                </div>
+                <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+                <div class="catalog__subtext">
+                  <p class="catalog__description" href="./catalogItem.html">Подробнее</p>
+                  <span class="catalog__avlb-good">В наличии</span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="catalog__item">
+            <div class="catalog__like active"> </div>
+            <button class="catalog__basket"></button>
+            <a href="./catalogItem.html" class="catalog__content">
+              <img class="catalog__img" src="./img/card12.png" alt="фото детали">
+              <div>
+                <div class="catalog__buy">
+                  <span class="catalog__price">3 626 ₽</span>
+                </div>
+                <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+                <div class="catalog__subtext">
+                  <p class="catalog__description" href="./catalogItem.html">Подробнее</p>
+                  <span>Под заказ</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <div class="catalog__like"></div>
+            <button class="catalog__basket"></button>
+            <a href="./catalogItem.html" class="catalog__content">
+              <img class="catalog__img" src="./img/card11.png" alt="фото детали">
+              <div>
+                <div class="catalog__buy">
+                  <span class="catalog__price">1 736 ₽</span>
+                </div>
+                <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+                <div class="catalog__subtext">
+                  <p class="catalog__description" href="./catalogItem.html">Подробнее</p>
+                  <span class="catalog__avlb-good">В наличии</span>
+                </div>
+              </div>
+            </a>
+          </li>
 
           <li class="catalog__item">
             <div class="catalog__like"> </div>
-            <img class="catalog__img" src="./img/card11.png" alt="фото детали">
-            <div>
-              <div class="catalog__buy">
-                <span class="catalog__price">1 736 ₽</span>
-                <img class="catalog__basket" src="./img/basket-light.svg" alt="в корзину">
-              </div>
-              <a href="./catalogItem.html">
-                <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
-                <div class="catalog__subtext">
-                  <a class="catalog__description" href="#">Подробнее</a>
-                  <span class="catalog__avlb-good">В наличии</span>
+            <button class="catalog__basket"></button>
+            <a href="./catalogItem.html" class="catalog__content">
+              <img class="catalog__img" src="./img/card12.png" alt="фото детали">
+              <div>
+                <div class="catalog__buy">
+                  <span class="catalog__price">3 626 ₽</span>
                 </div>
-              </a>
-            </div>
-          </li>
-          <li class="catalog__item">
-            <div class="catalog__like"> </div>
-            <img class="catalog__img" src="./img/card12.png" alt="фото детали">
-            <div>
-              <div class="catalog__buy">
-                <span class="catalog__price">3 626 ₽</span>
-                <img class="catalog__basket" src="./img/basket-light.svg" alt="в корзину">
-              </div>
-              <a href="./catalogItem.html">
                 <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
                 <div class="catalog__subtext">
-                  <a class="catalog__description" href="#">Подробнее</a>
+                  <p class="catalog__description" href="./catalogItem.html">Подробнее</p>
                   <span>Под заказ</span>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </li>
           <li class="catalog__item">
-            <div class="catalog__like"> </div>
-            <img class="catalog__img" src="./img/card11.png" alt="фото детали">
-            <div>
-              <div class="catalog__buy">
-                <span class="catalog__price">1 736 ₽</span>
-                <img class="catalog__basket" src="./img/basket-light.svg" alt="в корзину">
-              </div>
-              <a href="./catalogItem.html">
+            <div class="catalog__like"></div>
+            <button class="catalog__basket"></button>
+            <a href="./catalogItem.html" class="catalog__content">
+              <img class="catalog__img" src="./img/card11.png" alt="фото детали">
+              <div>
+                <div class="catalog__buy">
+                  <span class="catalog__price">1 736 ₽</span>
+                </div>
                 <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
                 <div class="catalog__subtext">
-                  <a class="catalog__description" href="#">Подробнее</a>
+                  <p class="catalog__description" href="./catalogItem.html">Подробнее</p>
                   <span class="catalog__avlb-good">В наличии</span>
                 </div>
-              </a>
-            </div>
-          </li>
-          <li class="catalog__item">
-            <div class="catalog__like active"> </div>
-            <img class="catalog__img" src="./img/card12.png" alt="фото детали">
-            <div>
-              <div class="catalog__buy">
-                <span class="catalog__price">3 626 ₽</span>
-                <img class="catalog__basket" src="./img/basket-light.svg" alt="в корзину">
               </div>
-              <a href="./catalogItem.html">
+            </a>
+          </li>
+
+          <li class="catalog__item">
+            <div class="catalog__like"> </div>
+            <button class="catalog__basket"></button>
+            <a href="./catalogItem.html" class="catalog__content">
+              <img class="catalog__img" src="./img/card12.png" alt="фото детали">
+              <div>
+                <div class="catalog__buy">
+                  <span class="catalog__price">3 626 ₽</span>
+                </div>
                 <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
                 <div class="catalog__subtext">
-                  <a class="catalog__description" href="#">Подробнее</a>
+                  <p class="catalog__description" href="./catalogItem.html">Подробнее</p>
                   <span>Под заказ</span>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </li>
           <li class="catalog__item">
-            <div class="catalog__like"> </div>
-            <img class="catalog__img" src="./img/card11.png" alt="фото детали">
-            <div>
-              <div class="catalog__buy">
-                <span class="catalog__price">1 736 ₽</span>
-                <img class="catalog__basket" src="./img/basket-light.svg" alt="в корзину">
-              </div>
-              <a href="./catalogItem.html">
+            <div class="catalog__like"></div>
+            <button class="catalog__basket"></button>
+            <a href="./catalogItem.html" class="catalog__content">
+              <img class="catalog__img" src="./img/card11.png" alt="фото детали">
+              <div>
+                <div class="catalog__buy">
+                  <span class="catalog__price">1 736 ₽</span>
+                </div>
                 <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
                 <div class="catalog__subtext">
-                  <a class="catalog__description" href="#">Подробнее</a>
+                  <p class="catalog__description" href="./catalogItem.html">Подробнее</p>
                   <span class="catalog__avlb-good">В наличии</span>
                 </div>
-              </a>
-            </div>
-          </li>
-          <li class="catalog__item">
-            <div class="catalog__like"> </div>
-            <img class="catalog__img" src="./img/card12.png" alt="фото детали">
-            <div>
-              <div class="catalog__buy">
-                <span class="catalog__price">3 626 ₽</span>
-                <img class="catalog__basket" src="./img/basket-light.svg" alt="в корзину">
               </div>
-              <a href="./catalogItem.html">
-                <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
-                <div class="catalog__subtext">
-                  <a class="catalog__description" href="#">Подробнее</a>
-                  <span>Под заказ</span>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li class="catalog__item">
-            <div class="catalog__like"> </div>
-            <img class="catalog__img" src="./img/card11.png" alt="фото детали">
-            <div>
-              <div class="catalog__buy">
-                <span class="catalog__price">1 736 ₽</span>
-                <img class="catalog__basket" src="./img/basket-light.svg" alt="в корзину">
-              </div>
-              <a href="./catalogItem.html">
-                <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
-                <div class="catalog__subtext">
-                  <a class="catalog__description" href="#">Подробнее</a>
-                  <span class="catalog__avlb-good">В наличии</span>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li class="catalog__item">
-            <div class="catalog__like"> </div>
-            <img class="catalog__img" src="./img/card12.png" alt="фото детали">
-            <div>
-              <div class="catalog__buy">
-                <span class="catalog__price">3 626 ₽</span>
-                <img class="catalog__basket" src="./img/basket-light.svg" alt="в корзину">
-              </div>
-              <a href="./catalogItem.html">
-                <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
-                <div class="catalog__subtext">
-                  <a class="catalog__description" href="#">Подробнее</a>
-                  <span>Под заказ</span>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li class="catalog__item">
-            <div class="catalog__like"> </div>
-            <img class="catalog__img" src="./img/card11.png" alt="фото детали">
-            <div>
-              <div class="catalog__buy">
-                <span class="catalog__price">1 736 ₽</span>
-                <img class="catalog__basket" src="./img/basket-light.svg" alt="в корзину">
-              </div>
-              <a href="./catalogItem.html">
-                <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
-                <div class="catalog__subtext">
-                  <a class="catalog__description" href="#">Подробнее</a>
-                  <span class="catalog__avlb-good">В наличии</span>
-                </div>
-              </a>
-            </div>
+            </a>
           </li>
 
         </ul>

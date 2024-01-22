@@ -48,77 +48,26 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="./index.html">Главная</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+        <li class="breadcrumb-item active" aria-current="page">Личный кабинет</li>
       </ol>
     </nav>
 
-    <section class="product">
-      <h2 class="product__title">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</h2>
-      <div class="product__container">
-        <div class="product__main">
-
-          <div class="product__imgs">
-            <nav class="product__nav">
-              <img src="./img/product-main.png" alt="картинка товара" class="product__nav-item active"></img>
-              <img src="./img/prodct-two.png" alt="картинка товара" class="product__nav-item"></img>
-              <img src="./img/product-three.png" alt="картинка товара" class="product__nav-item"></img>
-            </nav>
-            <div class="product__main-img">
-              <img class="product__like" src="./img/like-blue.svg" alt="добавить в избранное">
-              <img class="product__img" src="./img/product-main.png" alt="главное изображение товара">
-            </div>
-          </div>
-
-          <ul class="product__description">
-            <a href="" class="product__art">Артикул: SA-C20-08</a>
-            <li class="product__description-item">
-              <p class="product__subtitle">Диапазон рабочих температур</p>
-              <div class="product__underline"></div>
-              <p class="product__text">0~60°C</p>
-            </li>
-            <li class="product__description-item">
-              <p class="product__subtitle">Максимальное входное давление</p>
-              <div class="product__underline"></div>
-              <p class="product__text">10 Бар</p>
-            </li>
-            <li class="product__description-item">
-              <p class="product__subtitle">Рабочая среда</p>
-              <div class="product__underline"></div>
-              <p class="product__text">воздух</p>
-            </li>
-
-            <li class="product__description-item">
-              <p class="product__subtitle">Материалы</p>
-              <div class="product__underline"></div>
-              <p class="product__text">NBR, POM, Алюминий, нейлон, технополимер</p>
-            </li>
-            <a href="#description" class="product__link">Перейти к описанию</a>
-            <ul>
-
-        </div>
-        <div class="product__sidebar">
-          <div class="product__sidebar-main">
-            <h2 class="product__price">4 760 ₽ <span class="product__price sub">2 380 ₽</span></h2>
-            <p class="product__subtext">Цена с НДС 20%</p>
-
-            <div class="product__counter">
-              <div class="d-flex">
-                <button class="product__counter-btn"
-                  onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
-                <input type="number" class="product__input" value="2">
-                <button class="product__counter-btn right"
-                  onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
-              </div>
-              <p>х 2 380</p>
-            </div>
-
-            <button class="product__sidebar-btn active">Добавить в корзину</button>
-            <p class="product__desc-info">На складе 2 шт<br>
-              Доставка от 4х дней
-            </p>
-          </div>
-          <a href="./catalog.html" class="product__sidebar-btn">Каталог</a>
-          <a href="" class="product__sidebar-btn">Задать вопрос</a>
+    <section class="profile">
+      <div class="profile__sidebar">
+        <h2 class="profile__title">Каталог товаров</h2>
+        <ul class="profile__nav">
+          <li class="profile__name"><a href="./profile.html">Учетные данные</a></li>
+          <li class="profile__name"><a href="./profile-basket.html">Моя корзина</a></li>
+          <li class="profile__name"><a href="./profile-favorite.html">Избранные товары</a></li>
+          <li class="profile__name"><a href="./profile-orders.html">Мои заказы</a></li>
+          <li class="profile__name active"><a href="./profile-delivery.html">Адреса доставки</a></li>
+          <li class="profile__name"><a href="./profile-organization.html">Мои организации</a></li>
+        </ul>
+        <div class="profile__tp">
+          <h3 class="profile__tp-title">Ваш менеджер</h3>
+          <img src="./img/profileTP.svg" class="profile__tp-img" alt="иконка тех. поддержки">
+          <p>Иванов Иван Иванович График работы: 8:00 — 16:00</p>
+          <button class="profile__tp-btn">Заказать звонок</button>
         </div>
       </div>
     </section>
@@ -210,89 +159,14 @@
             </div>
           </a>
         </li>
-        
+
 
       </div>
-    </section>
-
-    <nav class="infonav">
-      <a class="infonav__item active" href="#description">Характеристики</a>
-      <a class="infonav__item" href="./catalogItemDimensions.html#dimensions">Габаритные размеры</a>
-      <h2 class="infonav__title">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</h2>
-    </nav>
-
-    <section id="description" class="description">
-      <div>
-        <ul class="product__description description__text">
-          <li class="product__description-item">
-            <p class="product__subtitle">Диапазон рабочих температур</p>
-            <div class="product__underline"></div>
-            <p class="product__text">-10° – +60° C</p>
-          </li>
-          <li class="product__description-item">
-            <p class="product__subtitle">Максимальное входное давление</p>
-            <div class="product__underline"></div>
-            <p class="product__text">10 Бар</p>
-          </li>
-          <li class="product__description-item">
-            <p class="product__subtitle">Рабочая среда</p>
-            <div class="product__underline"></div>
-            <p class="product__text">воздух</p>
-          </li>
-          <li class="product__description-item">
-            <p class="product__subtitle">Материалы</p>
-            <div class="product__underline"></div>
-            <p class="product__text">NBR, POM, Алюминий, нейлон, технополимер</p>
-          </li>
-          <li class="product__description-item">
-            <p class="product__subtitle">Конструкция</p>
-            <div class="product__underline"></div>
-            <p class="product__text">Двухкамерная с распылителем и регулятором, Мембранный регулятор и фильтр циклонного
-              типа</p>
-          </li>
-          <li class="product__description-item">
-            <p class="product__subtitle">Присоединительная резьба</p>
-            <div class="product__underline"></div>
-            <p class="product__text">G1/4"</p>
-          </li>
-          <li class="product__description-item">
-            <p class="product__subtitle">Слив конденсата</p>
-            <div class="product__underline"></div>
-            <p class="product__text">ручной</p>
-          </li>
-          <li class="product__description-item">
-            <p class="product__subtitle">Степень фильтрации</p>
-            <div class="product__underline"></div>
-            <p class="product__text">5 мкм</p>
-          </li>
-          <li class="product__description-item">
-            <p class="product__subtitle">Расход воздуха</p>
-            <div class="product__underline"></div>
-            <p class="product__text">550 нЛ/мин</p>
-          </li>
-          <li class="product__description-item">
-            <p class="product__subtitle">Резьба для манометра</p>
-            <div class="product__underline"></div>
-            <p class="product__text">G1/8"</p>
-          </li>
-          <li class="product__description-item">
-            <p class="product__subtitle">Регулирование давления</p>
-            <div class="product__underline"></div>
-            <p class="product__text">0.5 - 8.5 Бар</p>
-          </li>
-
-          <ul>
-      </div>
-
-      <div class="product__main-img">
-        <img class="product__img" src="./img/product-main.png" alt="главное изображение товара">
-      </div>
-
     </section>
 
   </main>
 
-  <footer class="footer blue">
+  <footer class="footer">
     <div class="footer__container">
       <img src="./img/main-logo.svg" alt="лого компании медиалайн" class="footer__logo" />
       <div>
