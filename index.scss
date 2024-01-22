@@ -1,5 +1,4 @@
 /* variables */
-
 $light-gray: #F9F9F9;
 $white-blue: #E4EAF7;
 $gray: #ECECEC;
@@ -10,27 +9,14 @@ $white: #fff;
 $black: #000;
 $red: #D1000F;
 
-$desktop-width: 1520px;
-$main-overlay-width: 1140px;
+//var(--desktop-width): 1520px;
 $border-radius: 20px;
-
-$font-size-s: 16px;
-$font-line-s: 21px;
-
-$font-size-m: 18px;
-$font-line-m: 18px;
-
-$font-size-l: 20px;
-$font-line-l: 25px;
-
-$font-size-xl: 28px;
-$font-line-xl: 35px;
 
 /* reset */
 
 * {
   color: $black;
-  font-size: $font-size-s;
+  font-size: var(--font-size-s);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -79,6 +65,20 @@ head {
   font-size: 52px;
   color: transparent;
   background: transparent;
+
+  --desktop-width: 1520px;
+
+  --font-size-s: 16px;
+  --font-line-s: 21px;
+
+  --font-size-m: 18px;
+  --font-line-m: 18px;
+
+  --font-size-l: 20px;
+  --font-line-l: 25px;
+
+  --font-size-xl: 30px;
+  --font-line-xl: 40px;
 }
 
 head::before,
@@ -143,7 +143,7 @@ head::after {
 }
 
 .root {
-  padding: 0 calc((100% - $desktop-width) / 2);
+  padding: 0 calc((100% - var(--desktop-width)) / 2);
 }
 
 /* header */
@@ -153,7 +153,7 @@ head::after {
 
   &__first {
     height: 44px;
-    max-width: $desktop-width;
+    max-width: var(--desktop-width);
     margin: 0 auto;
     background-color: transparent;
     display: flex;
@@ -166,13 +166,13 @@ head::after {
   &__link {
     text-decoration: none;
     margin-right: 22px;
-    font-size: $font-size-s;
-    line-height: $font-line-s;
+    font-size: var(--font-size-s);
+    line-height: var(--font-line-s);
   }
 
   &__btn {
-    font-size: $font-size-m;
-    line-height: $font-line-m;
+    font-size: var(--font-size-m);
+    line-height: var(--font-line-m);
     background-color: $blue;
     color: $white;
     text-decoration: underline;
@@ -183,7 +183,7 @@ head::after {
 
   &__container {
     background-color: $light-gray;
-    padding: 30px calc((100% - $desktop-width) / 2);
+    padding: 30px calc((100% - var(--desktop-width)) / 2);
   }
 
   &__main {
@@ -197,8 +197,8 @@ head::after {
 
   &__input {
     width: 55%;
-    font-size: $font-size-s;
-    line-height: $font-line-s;
+    font-size: var(--font-size-s);
+    line-height: var(--font-line-s);
     border: $dark-blue solid 2px;
     padding: 13px 70px 13px 23px;
     border-radius: $border-radius;
@@ -226,7 +226,7 @@ head::after {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-width: $desktop-width;
+    max-width: var(--desktop-width);
     padding: 12px 63px;
     margin: 0 auto;
     background-color: $white;
@@ -237,8 +237,8 @@ head::after {
 
   &__nav-link {
     color: $dark-blue;
-    font-size: $font-size-s;
-    line-height: $font-line-s;
+    font-size: var(--font-size-s);
+    line-height: var(--font-line-s);
     text-transform: uppercase;
     background-color: $white;
     text-decoration: none;
@@ -278,7 +278,7 @@ head::after {
 
 .carousel {
   position: relative;
-  max-width: $desktop-width;
+  max-width: var(--desktop-width);
   height: 551px;
   background-color: $gray;
   margin: 0 auto;
@@ -309,22 +309,22 @@ head::after {
   &__subtitle {
     color: $blue;
     text-transform: uppercase;
-    font-size: $font-size-l;
-    line-height: $font-line-l;
+    font-size: var(--font-size-l);
+    line-height: var(--font-line-l);
     margin-bottom: 20px;
   }
 
   &__title {
     text-transform: uppercase;
-    font-size: $font-size-xl;
-    line-height: $font-line-xl;
+    font-size: var(--font-size-xl);
+    line-height: var(--font-line-xl);
     max-width: 490px;
     margin-bottom: 85px;
   }
 
   &__btn {
-    font-size: $font-size-l;
-    line-height: $font-line-l;
+    font-size: var(--font-size-l);
+    line-height: var(--font-line-l);
     padding: 14px 33px;
     border-radius: $border-radius;
     color: $white;
@@ -345,7 +345,7 @@ head::after {
 /* popular */
 
 .popular {
-  max-width: $desktop-width;
+  max-width: var(--desktop-width);
   margin: 0 auto 56px auto;
   background-color: transparent;
 
@@ -358,8 +358,8 @@ head::after {
 
   &__title {
     color: $black;
-    font-size: $font-size-xl;
-    line-height: $font-line-xl;
+    font-size: var(--font-size-xl);
+    line-height: var(--font-line-xl);
     font-weight: 500;
     margin: 44px 0 20px 0;
   }
@@ -391,8 +391,8 @@ head::after {
     bottom: 0;
     text-align: center;
     color: $black;
-    font-size: $font-size-m;
-    line-height: $font-line-m;
+    font-size: var(--font-size-m);
+    line-height: var(--font-line-m);
   }
 
   &__description {
@@ -418,7 +418,7 @@ head::after {
   }
 
   &__description-text {
-    line-height: $font-size-s;
+    line-height: var(--font-size-s);
     color: $white;
 
     &:last-child {
@@ -433,7 +433,7 @@ head::after {
   &_catalog {
     min-width: 100%;
     max-width: 100%;
-    padding: 50px calc((100% - $desktop-width) / 2);
+    padding: 50px calc((100% - var(--desktop-width)) / 2);
     margin: 0;
     background-color: $light-gray;
 
@@ -474,7 +474,7 @@ head::after {
   display: flex;
   flex-direction: row;
   gap: 7px;
-  padding: 56px calc((100% - $desktop-width) / 2);
+  padding: 56px calc((100% - var(--desktop-width)) / 2);
   //transition: 0s all 0 ease-in-out;
 
   &.active {
@@ -486,14 +486,10 @@ head::after {
     position: relative;
     z-index: 5;
     color: $black;
-    font-size: $font-size-xl;
-    line-height: $font-line-xl;
+    font-size: var(--font-size-xl);
+    line-height: var(--font-line-xl);
     font-weight: 500;
     margin: 0 0 20px 0;
-  }
-
-  &__sidebar {
-    width: 375px;
   }
 
   &__nav {
@@ -510,8 +506,8 @@ head::after {
     min-width: 375px;
     height: 100%;
 
-    font-size: $font-size-l;
-    line-height: $font-line-l;
+    font-size: var(--font-size-l);
+    line-height: var(--font-line-l);
     display: block;
     padding: 16px 33px;
     z-index: 5;
@@ -582,10 +578,6 @@ head::after {
       width: 300px;
       height: 400px;
 
-      .catalog__basket {
-        top: 218px;
-      }
-
       .catalog__content {
         padding: 30px 30px 20px 30px;
       }
@@ -594,6 +586,7 @@ head::after {
 
   &__content {
     width: 100%;
+    min-width: 283px;
     height: 100%;
     background-color: $white;
     border: $white-blue 2px solid;
@@ -608,7 +601,7 @@ head::after {
 
   &__img {
     display: block;
-    width: 220px;
+    max-width: 220px;
     max-height: 340px;
     margin: 0 auto;
     object-fit: contain;
@@ -623,8 +616,8 @@ head::after {
   }
 
   &__price {
-    font-size: $font-line-xl;
-    line-height: $font-line-xl;
+    font-size: var(--font-line-xl);
+    line-height: var(--font-line-xl);
     font-weight: 700;
   }
 
@@ -632,7 +625,7 @@ head::after {
     position: absolute;
     z-index: 5;
     right: 25px;
-    top: 395px;
+    bottom: 146px;
     height: 32px;
     width: 50px;
     border-radius: 25px;
@@ -653,6 +646,7 @@ head::after {
   &__description {
     text-decoration: underline;
     float: left;
+    margin: 0;
 
     &:hover {
       opacity: 0.8;
@@ -669,7 +663,7 @@ head::after {
     height: 33px;
     position: absolute;
     top: 20px;
-    right: 25px;
+    right: 22px;
     z-index: 5;
     cursor: pointer;
     background: url(./img/like-blue.svg) center/contain no-repeat;
@@ -728,8 +722,9 @@ head::after {
 .projects {
   position: relative;
   background-color: $white-blue;
-  padding: 56px calc((100% - $desktop-width) / 2);
+  padding: 56px calc((100% - var(--desktop-width)) / 2);
   border-radius: 0 0 20px 20px;
+  overflow: hidden;
 
   &.sub {
     border-radius: 0;
@@ -745,12 +740,22 @@ head::after {
     justify-content: start;
     align-items: center;
     gap: 7px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__overlay {
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to right, transparent 90%, $white-blue);
   }
 
   &__title {
     color: $black;
-    font-size: $font-size-xl;
-    line-height: $font-line-xl;
+    font-size: var(--font-size-xl);
+    line-height: var(--font-line-xl);
     font-weight: 500;
     margin-bottom: 24px;
   }
@@ -763,17 +768,17 @@ head::after {
 
   &__img {
     max-width: 300px;
-    min-height: 300px;
     max-height: 300px;
     margin-bottom: 10px;
+    object-fit: contain;
   }
 
-  &__overlay {
+  /* &__overlay {
     top: 15%;
-    right: 60px;
+    right: calc((100% - var(--desktop-width)) / 2 - 150px);
     height: 80%;
     position: absolute;
-  }
+  } */
 }
 
 /* newsletter */
@@ -808,16 +813,16 @@ head::after {
 
   &__title {
     color: $white;
-    font-size: $font-size-xl;
-    line-height: $font-line-xl;
+    font-size: var(--font-size-xl);
+    line-height: var(--font-line-xl);
     font-weight: 500;
     margin: 0;
   }
 
   &__subtitle {
     color: $white;
-    font-size: $font-size-l;
-    line-height: $font-line-l;
+    font-size: var(--font-size-l);
+    line-height: var(--font-line-l);
     font-weight: 500;
   }
 
@@ -830,8 +835,8 @@ head::after {
   &__input {
     height: 50px;
     width: 307px;
-    font-size: $font-size-s;
-    line-height: $font-line-s;
+    font-size: var(--font-size-s);
+    line-height: var(--font-line-s);
     padding: 13px 23px;
     border-radius: 20px 0 0 20px;
     background-color: $white;
@@ -850,7 +855,7 @@ head::after {
 .footer {
   width: 100%;
   height: 345px;
-  padding: 56px calc((100% - 1520px) / 2);
+  padding: 56px calc((100% - var(--desktop-width)) / 2);
   background-color: $light-gray;
   color: white;
   display: flex;
@@ -881,8 +886,8 @@ head::after {
   }
 
   &__item {
-    font-size: $font-size-s;
-    line-height: $font-size-s;
+    font-size: var(--font-size-s);
+    line-height: var(--font-size-s);
     display: block;
     max-width: 282px;
     color: $black;
@@ -913,8 +918,8 @@ head::after {
   }
 
   &__btn {
-    font-size: $font-size-l;
-    line-height: $font-line-l;
+    font-size: var(--font-size-l);
+    line-height: var(--font-line-l);
     font-weight: 600;
     color: $white;
     padding: 14px 33px;
@@ -927,7 +932,7 @@ head::after {
 
 .breadcrumb {
   background-color: $light-gray;
-  padding: 0 calc((100% - $desktop-width) / 2) 20px calc((100% - $desktop-width) / 2);
+  padding: 0 calc((100% - var(--desktop-width)) / 2) 20px calc((100% - var(--desktop-width)) / 2);
   margin: 0;
 }
 
@@ -943,7 +948,7 @@ head::after {
 
 .product {
   background-color: $light-gray;
-  padding: 56px calc((100% - $desktop-width) / 2);
+  padding: 56px calc((100% - var(--desktop-width)) / 2);
 
   &__container {
     display: flex;
@@ -953,8 +958,8 @@ head::after {
 
   &__title {
     color: $black;
-    font-size: $font-size-xl;
-    line-height: $font-line-xl;
+    font-size: var(--font-size-xl);
+    line-height: var(--font-line-xl);
     font-weight: 500;
     margin-bottom: 30px;
   }
@@ -975,6 +980,7 @@ head::after {
     position: relative;
     width: 530px;
     height: 530px;
+    padding: 20px;
     background-color: $white;
     border: 2px solid $white-blue;
     border-radius: $border-radius;
@@ -982,6 +988,12 @@ head::after {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  &__img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
   }
 
   &__like {
@@ -1027,14 +1039,14 @@ head::after {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    padding: 20px 30px 0 35px;
+    padding: 20px 25px 0 35px;
   }
 
   &__art {
     color: $blue;
     margin-bottom: 20px;
-    font-size: $font-size-l;
-    line-height: $font-line-l;
+    font-size: var(--font-size-l);
+    line-height: var(--font-line-l);
   }
 
   &__description-item {
@@ -1052,8 +1064,8 @@ head::after {
     margin: 0;
     padding: 0;
     color: $dark-gray;
-    font-size: $font-size-l;
-    line-height: $font-line-l;
+    font-size: var(--font-size-l);
+    line-height: var(--font-line-l);
   }
 
   &__underline {
@@ -1068,15 +1080,15 @@ head::after {
     max-width: 148px;
     margin: 0;
     padding: 0;
-    font-size: $font-size-l;
-    line-height: $font-line-l;
+    font-size: var(--font-size-l);
+    line-height: var(--font-line-l);
   }
 
   &__link {
     color: $dark-blue;
     text-decoration: underline;
-    font-size: $font-size-l;
-    line-height: $font-line-l;
+    font-size: var(--font-size-l);
+    line-height: var(--font-line-l);
   }
 
   /* product sidebar */
@@ -1099,14 +1111,14 @@ head::after {
   }
 
   &__price {
-    font-size: $font-size-xl;
-    line-height: $font-line-xl;
+    font-size: var(--font-size-xl);
+    line-height: var(--font-line-xl);
     color: $red;
     margin: 0;
 
     &.sub {
-      font-size: $font-size-l;
-      line-height: $font-line-l;
+      font-size: var(--font-size-l);
+      line-height: var(--font-line-l);
       color: $black;
       text-decoration: line-through;
     }
@@ -1130,11 +1142,12 @@ head::after {
   }
 
   &__counter-btn {
+    width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: $font-size-xl;
-    line-height: $font-line-xl;
+    font-size: var(--font-size-xl);
+    line-height: var(--font-line-xl);
     border: 2px solid $white-blue;
     padding: 0 14px;
     border-radius: 20px 0 0 20px;
@@ -1148,7 +1161,7 @@ head::after {
     width: 68px;
     height: 39px;
     margin: 0;
-    font-size: $font-size-l;
+    font-size: var(--font-size-l);
     text-align: center;
     border-top: 2px solid $white-blue;
     border-bottom: 2px solid $white-blue;
@@ -1163,8 +1176,8 @@ head::after {
     min-width: 100%;
     padding: 14px 0;
     text-align: center;
-    font-size: $font-size-l;
-    line-height: $font-line-l;
+    font-size: var(--font-size-l);
+    line-height: var(--font-line-l);
     font-weight: 600;
     border-radius: $border-radius;
     border: 2px solid $white-blue;
@@ -1181,14 +1194,15 @@ head::after {
       color: $white;
       background-color: $blue;
       border: none;
-      padding: 20px 15px;
+      padding: 17px 13px;
       margin-bottom: 15px;
     }
   }
 
   &__desc-info {
     text-align: center;
-    line-height: $font-line-l;
+    line-height: var(--font-line-l);
+    margin: 0;
   }
 }
 
@@ -1196,9 +1210,10 @@ head::after {
 
 .infonav {
   background-color: $light-gray;
-  padding: 60px calc((100% - $desktop-width) / 2) 30px calc((100% - $desktop-width) / 2);
+  padding: 60px calc((100% - var(--desktop-width)) / 2) 30px calc((100% - var(--desktop-width)) / 2);
   display: flex;
   flex-direction: row;
+  align-items: center;
 
   &__item {
     display: flex;
@@ -1232,8 +1247,8 @@ head::after {
   }
 
   &__title {
-    font-size: $font-size-xl;
-    line-height: $font-line-xl;
+    font-size: var(--font-size-l);
+    line-height: var(--font-line-l);
   }
 }
 
@@ -1241,7 +1256,7 @@ head::after {
 
 .description {
   background-color: $light-gray;
-  padding: 0 calc((100% - $desktop-width) / 2);
+  padding: 0 calc((100% - var(--desktop-width)) / 2);
   display: grid;
   grid-template-columns: 1fr 530px;
   grid-template-rows: 1fr;
@@ -1259,7 +1274,7 @@ head::after {
 
 .dimensions {
   background-color: $light-gray;
-  padding: 0 calc((100% - $desktop-width) / 2) 55px;
+  padding: 0 calc((100% - var(--desktop-width)) / 2) 55px;
 
   &__text {
     max-width: 469px;
@@ -1329,14 +1344,14 @@ head::after {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 56px calc((100% - $desktop-width) / 2);
+  padding: 56px calc((100% - var(--desktop-width)) / 2);
 
   &__title {
     position: relative;
     z-index: 5;
     color: $black;
-    font-size: $font-size-xl;
-    line-height: $font-line-xl;
+    font-size: var(--font-size-xl);
+    line-height: var(--font-line-xl);
     font-weight: 500;
     margin: 0 0 20px 0;
   }
@@ -1364,8 +1379,8 @@ head::after {
     min-width: 375px;
     height: 100%;
 
-    font-size: $font-size-l;
-    line-height: $font-line-l;
+    font-size: var(--font-size-l);
+    line-height: var(--font-line-l);
     display: block;
     padding: 16px 33px;
     z-index: 5;
@@ -1406,8 +1421,8 @@ head::after {
   }
 
   &__tp-title {
-    font-size: $font-size-xl;
-    line-height: $font-line-xl;
+    font-size: var(--font-size-xl);
+    line-height: var(--font-line-xl);
     font-weight: 500;
   }
 
@@ -1416,8 +1431,8 @@ head::after {
     background-color: $white-blue;
     border-radius: $border-radius;
     color: $dark-blue;
-    font-size: $font-size-l;
-    line-height: $font-line-l;
+    font-size: var(--font-size-l);
+    line-height: var(--font-line-l);
     font-weight: 600;
   }
 
@@ -1446,8 +1461,8 @@ head::after {
 
   &__subtitle {
     margin: 0 0 24px 0;
-    font-size: $font-size-xl;
-    line-height: $font-line-xl;
+    font-size: var(--font-size-xl);
+    line-height: var(--font-line-xl);
     font-weight: 500;
 
     &.sub {
@@ -1466,8 +1481,8 @@ head::after {
     min-width: 90px;
     margin: 0 25px 0 0;
     padding: 13px 0;
-    font-size: $font-size-l;
-    line-height: $font-line-l;
+    font-size: var(--font-size-l);
+    line-height: var(--font-line-l);
   }
 
   &__input {
@@ -1527,8 +1542,8 @@ head::after {
     padding: 14px 100px;
     color: $white;
     border-radius: $border-radius;
-    font-size: $font-size-l;
-    line-height: $font-line-l;
+    font-size: var(--font-size-l);
+    line-height: var(--font-line-l);
   }
 }
 
@@ -1554,8 +1569,8 @@ head::after {
     display: block;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: $font-size-s;
-    line-height: $font-line-s;
+    font-size: var(--font-size-s);
+    line-height: var(--font-line-s);
     color: $dark-blue;
     min-width: 200px;
 
@@ -1566,18 +1581,19 @@ head::after {
     &.sub {
       text-transform: none;
       min-width: fit-content;
-      font-size: $font-size-xl;
-      line-height: $font-line-xl;
+      font-size: var(--font-size-xl);
+      line-height: var(--font-line-xl);
       font-weight: 500;
     }
+
     &.date {
       font-weight: 400;
     }
   }
 
   &__buy {
-    font-size: $font-size-xl;
-    line-height: $font-line-xl;
+    font-size: var(--font-size-xl);
+    line-height: var(--font-line-xl);
     font-weight: 600;
     margin-left: 20px;
   }
@@ -1622,8 +1638,8 @@ head::after {
 
   &__price {
     min-width: 200px;
-    font-size: $font-size-xl;
-    line-height: $font-line-xl;
+    font-size: var(--font-size-xl);
+    line-height: var(--font-line-xl);
     font-weight: 600;
   }
 
@@ -1699,8 +1715,8 @@ head::after {
   }
 
   &__title {
-    font-size: $font-size-l;
-    line-height: $font-line-l;
+    font-size: var(--font-size-l);
+    line-height: var(--font-line-l);
     color: $dark-blue;
     margin: 0 55px 18px 0;
   }
@@ -1716,8 +1732,8 @@ head::after {
     border-radius: $border-radius;
     border: 2px solid #848484;
     background-color: #4a4a4a1c;
-    font-size: $font-size-s;
-    line-height: $font-line-s;
+    font-size: var(--font-size-s);
+    line-height: var(--font-line-s);
     margin-right: 55px;
 
     &.active {
@@ -1807,27 +1823,225 @@ head::after {
         color: $black;
       }
     }
+
     .profile__save {
       margin: 0 0 0 auto;
     }
   }
+
   .order {
     padding: 20px 40px 20px 20px;
+
     p {
       margin: 0;
     }
   }
+
   &__title {
-    font-size: $font-size-l;
-    line-height: $font-line-l;
+    font-size: var(--font-size-l);
+    line-height: var(--font-line-l);
     color: $dark-blue;
     margin-bottom: 18px;
   }
+
   &__link {
     margin-bottom: 20px;
+
     &:last-child {
       margin: 0;
     }
 
   }
 }
+
+@media screen and (max-width: 1620px) {
+  body {
+    --desktop-width: 1200px;
+
+    --font-size-s: 12px;
+    --font-line-s: 16px;
+
+    --font-size-m: 18px;
+    --font-line-m: 18px;
+
+    --font-size-l: 16px;
+    --font-line-l: 21px;
+
+    --font-size-xl: 24px;
+    --font-line-xl: 31px;
+  }
+
+  .header__link {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .catalog {
+    &__name {
+      min-width: 300px;
+    }
+
+    &__content {
+      padding: 25px 30px;
+    }
+
+    &__item {
+      max-height: 460px;
+      height: fit-content;
+    }
+
+    &__img {
+      max-width: 70%;
+      height: 258px;
+    }
+
+    &__like {
+      width: 25px;
+      height: 22px;
+    }
+
+    &__basket {
+      right: 30px;
+      bottom: 108px;
+    }
+  }
+
+  .popular {
+    &__container {
+      max-width: var(--desktop-width);
+      grid-template-rows: repeat(3, 300px);
+      grid-template-columns: repeat(4, 300px);
+    }
+  }
+
+  .projects {
+    padding: 56px calc((100% - var(--desktop-width)) / 2 + 20px);
+
+    &__card {
+      padding: 10px;
+      max-height: 410px;
+      min-width: 300px;
+    }
+
+    &__img {
+      max-width: 90%;
+      max-height: 60%;
+    }
+  }
+
+  .product {
+    &__nav-item {
+      width: 78px;
+      height: 78px;
+    }
+
+    &__main-img {
+      width: 340px;
+      height: 340px;
+    }
+
+    &__sidebar-main {
+      width: 230px;
+      height: 235px;
+    }
+
+    &__desc-info {
+      &:last-child {
+        display: none;
+      }
+    }
+
+    &__subtext {
+      margin: 0 0 8px 0;
+    }
+
+    &__input {
+      width: 58px;
+    }
+  }
+
+  .dimensions {
+    th,
+    td {
+      padding: 10px;
+    }
+  }
+}
+
+/* @media screen and (max-width: 1300px) {
+  .catalog {
+    &__name {
+      width: 300px;
+    }
+
+    &__item {
+      width: 142px;
+      height: 164px;
+    }
+  }
+
+  .popular {
+    &__container {
+      max-width: var(--desktop-width);
+      grid-template-rows: repeat(3, 300px);
+      grid-template-columns: repeat(4, 300px);
+    }
+  }
+
+  .projects {
+    padding: 56px calc((100% - var(--desktop-width)) / 2 + 20px);
+
+    &__card {
+      padding: 10px;
+      min-width: 131px;
+      max-height: 210px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    --desktop-width: 90%;
+
+    --font-size-s: 10px;
+    --font-line-s: 13px;
+
+    --font-size-m: 12px;
+    --font-line-m: 16px;
+
+    --font-size-l: 14px;
+    --font-line-l: 18px;
+
+    --font-size-xl: 16px;
+    --font-line-xl: 21px;
+  }
+
+  .catalog {
+    &__name {
+      width: 300px;
+    }
+
+    &__item {
+      width: 142px;
+      height: 164px;
+    }
+  }
+
+  .popular {
+    &__container {
+      max-width: var(--desktop-width);
+      grid-template-rows: repeat(3, 300px);
+      grid-template-columns: repeat(4, 300px);
+    }
+  }
+
+  .projects {
+    padding: 56px calc((100% - var(--desktop-width)) / 2 + 20px);
+
+    &__card {
+      padding: 10px;
+      min-width: 131px;
+      max-height: 210px;
+    }
+  }
+} */
