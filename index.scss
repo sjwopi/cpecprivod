@@ -1677,7 +1677,6 @@ head::after {
   border-radius: $border-radius;
   border: 2px solid $white-blue;
   background-color: $white;
-  //padding: 20px;
   margin-bottom: 12px;
 
   .basket__list {
@@ -1751,4 +1750,32 @@ head::after {
     text-decoration: underline;
   }
 
+}
+
+.delivery {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: $border-radius;
+  border: 2px solid $white-blue;
+  background-color: $white;
+  padding: 25px 40px;
+  margin-bottom: 12px;
+  .profile__checkbox_lbl {
+    margin-right: 40px;
+  }
+  &__text {
+    display: flex;
+    flex-direction: row;
+    max-width: 450px;
+    margin-right: 40px;
+  }
+  &__delete {
+    width: 31px;
+    height: 36px;
+    margin-right: 16px;
+    background: url(./img/trash.svg) center/contain no-repeat;
+  }
 }
