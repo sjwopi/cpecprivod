@@ -542,10 +542,9 @@ head::after {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 587px);
+    grid-template-rows: repeat(auto, 587px);
     gap: 7px;
     margin-bottom: 20px;
-    //transition: all .3s ease-in-out;
 
     &.active {
       padding: 20px;
