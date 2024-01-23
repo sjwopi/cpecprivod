@@ -48,12 +48,74 @@
   </header>
 
   <main>
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="./index.html">Главная</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Личный кабинет</li>
-      </ol>
-    </nav>
+    <header class="header">
+      <div class="header__first">
+        <a href="#" class="header__link">+7 (920) 252-50-32</a>
+        <a href="#" class="header__link">sale@specprivod.com</a>
+        <button type="button" class="header__btn">Заказать звонок</button>
+      </div>
+  
+      <div class="header__container">
+        <div class="header__main">
+          <a href="./index.html"><img src="./img/main-logo.svg" alt="лого компании" /></a>
+  
+          <input class="header__input" placeholder="Поиск по сайту" />
+  
+          <div class="header__icons">
+            <a class="header__icon" href="./favorite.html"><img class="header__icon" src="./img/like.svg"
+                alt="избранное" /></a>
+            <a class="header__icon" href="./basket.html"><img class="header__icon" src="./img/basket.svg"
+                alt="корзина" /></a>
+            <a class="header__icon" href="./profile.html"><img class="header__icon" src="./img/profile.svg"
+                alt="ваш профиль" /></a>
+          </div>
+        </div>
+  
+        <nav class="header__nav">
+          <a class="header__nav-link" href="./catalog.html">Каталог товаров</a>
+          <a class="header__nav-link" href="#">О компании</a>
+          <a class="header__nav-link" href="#">выполненные проекты</a>
+          <a class="header__nav-link" href="#">Услуги</a>
+          <a class="header__nav-link" href="#">Доставка и оплата</a>
+          <a class="header__nav-link" href="#">Контакты</a>
+        </nav>
+      </div>
+    </header>
+  
+    <header class="header-mobile">
+      <div class="header-mobile__first">
+        <a href="./index.html"><img src="./img/main-logo.svg" alt="лого компании" class="header-mobile__logo"></a>
+        <button class="header-mobile__hamb" type="button" data-toggle="collapse" data-target="#multiCollapseExample1"
+          aria-expanded="false" aria-controls="multiCollapseExample1"></button>
+  
+        <div class="header-mobile__container collapse multi-collapse" id="multiCollapseExample1">
+          <nav class="header-mobile__nav">
+            <a class="header-mobile__nav-link" href="./catalog.html">Каталог товаров</a>
+            <a class="header-mobile__nav-link" href="#">О компании</a>
+            <a class="header-mobile__nav-link" href="#">выполненные проекты</a>
+            <a class="header-mobile__nav-link" href="#">Услуги</a>
+            <a class="header-mobile__nav-link" href="#">Доставка и оплата</a>
+            <a class="header-mobile__nav-link" href="#">Контакты</a>
+            <button type="button" class="header-mobile__nav-link header-mobile__btn">Заказать звонок</button>
+            <a href="#" class="header-mobile__nav-link header-mobile__link">sale@specprivod.com</a>
+            <a href="#" class="header-mobile__nav-link header-mobile__link">+7 (920) 252-50-32</a>
+          </nav>
+        </div>
+      </div>
+      <div class="header-mobile__main">
+  
+        <input class="header-mobile__input" placeholder="Поиск по сайту" />
+  
+        <div class="header__icons">
+          <a class="header-mobile__icon" href="./favorite.html"><img class="header-mobile__icon" src="./img/like.svg"
+              alt="избранное" /></a>
+          <a class="header-mobile__icon" href="./basket.html"><img class="header-mobile__icon" src="./img/basket.svg"
+              alt="корзина" /></a>
+          <a class="header-mobile__icon" href="./profile.html"><img class="header-mobile__icon" src="./img/profile.svg"
+              alt="ваш профиль" /></a>
+        </div>
+      </div>
+    </header>
 
     <section class="profile">
       <h2 class="profile__title">Личный кабинет</h2>

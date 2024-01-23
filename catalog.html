@@ -25,9 +25,12 @@
         <input class="header__input" placeholder="Поиск по сайту" />
 
         <div class="header__icons">
-          <a class="header__icon" href="./favorite.html"><img class="header__icon" src="./img/like.svg" alt="избранное" /></a>
-          <a class="header__icon" href="./basket.html"><img class="header__icon" src="./img/basket.svg" alt="корзина" /></a>
-          <a class="header__icon" href="./profile.html"><img class="header__icon" src="./img/profile.svg" alt="ваш профиль" /></a>
+          <a class="header__icon" href="./favorite.html"><img class="header__icon" src="./img/like.svg"
+              alt="избранное" /></a>
+          <a class="header__icon" href="./basket.html"><img class="header__icon" src="./img/basket.svg"
+              alt="корзина" /></a>
+          <a class="header__icon" href="./profile.html"><img class="header__icon" src="./img/profile.svg"
+              alt="ваш профиль" /></a>
         </div>
       </div>
 
@@ -39,6 +42,41 @@
         <a class="header__nav-link" href="#">Доставка и оплата</a>
         <a class="header__nav-link" href="#">Контакты</a>
       </nav>
+    </div>
+  </header>
+
+  <header class="header-mobile">
+    <div class="header-mobile__first">
+      <a href="./index.html"><img src="./img/main-logo.svg" alt="лого компании" class="header-mobile__logo"></a>
+      <button class="header-mobile__hamb" type="button" data-toggle="collapse" data-target="#multiCollapseExample1"
+        aria-expanded="false" aria-controls="multiCollapseExample1"></button>
+
+      <div class="header-mobile__container collapse multi-collapse" id="multiCollapseExample1">
+        <nav class="header-mobile__nav">
+          <a class="header-mobile__nav-link" href="./catalog.html">Каталог товаров</a>
+          <a class="header-mobile__nav-link" href="#">О компании</a>
+          <a class="header-mobile__nav-link" href="#">выполненные проекты</a>
+          <a class="header-mobile__nav-link" href="#">Услуги</a>
+          <a class="header-mobile__nav-link" href="#">Доставка и оплата</a>
+          <a class="header-mobile__nav-link" href="#">Контакты</a>
+          <button type="button" class="header-mobile__nav-link header-mobile__btn">Заказать звонок</button>
+          <a href="#" class="header-mobile__nav-link header-mobile__link">sale@specprivod.com</a>
+          <a href="#" class="header-mobile__nav-link header-mobile__link">+7 (920) 252-50-32</a>
+        </nav>
+      </div>
+    </div>
+    <div class="header-mobile__main">
+
+      <input class="header-mobile__input" placeholder="Поиск по сайту" />
+
+      <div class="header__icons">
+        <a class="header-mobile__icon" href="./favorite.html"><img class="header-mobile__icon" src="./img/like.svg"
+            alt="избранное" /></a>
+        <a class="header-mobile__icon" href="./basket.html"><img class="header-mobile__icon" src="./img/basket.svg"
+            alt="корзина" /></a>
+        <a class="header-mobile__icon" href="./profile.html"><img class="header-mobile__icon" src="./img/profile.svg"
+            alt="ваш профиль" /></a>
+      </div>
     </div>
   </header>
 
@@ -222,7 +260,7 @@
       <h2 class="projects__title">Сопутствующие товары</h2>
 
       <div class="projects__container">
-
+        <div class="projects__overlay"></div>
         
         <li class="catalog__item catalog__item_small">
           <div class="catalog__like"></div>
@@ -308,10 +346,6 @@
         
 
       </div>
-    </section>
-
-    <section class="description">
-
     </section>
 
   </main>
@@ -345,8 +379,10 @@
 
     <list class="footer__container">
       <button class="footer__btn">Заказать звонок</button>
-      <img class="footer__img" src="./img/Счетчик Изображение.svg" alt="счетчик изображение">
-      <li><a href="https://sitenn.ru/" class="footer__item">Разработка сайта Сайт НН</a></li>
+      <div class="footer__cont">
+        <img class="footer__img" src="./img/Счетчик Изображение.svg" alt="счетчик изображение">
+        <li><a href="https://sitenn.ru/" class="footer__item">Разработка сайта Сайт НН</a></li>
+      </div>
     </list>
   </footer>
 
