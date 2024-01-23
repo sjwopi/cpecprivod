@@ -2374,7 +2374,9 @@ head::after {
       width: 400px;
       height: 400px;
     }
-
+&__sidebar {
+  gap: 7px;
+}
     &__sidebar-main {
       width: 100%;
       height: 235px;
@@ -2425,8 +2427,11 @@ head::after {
       &__description {
         margin: 0;
         padding: 0;
+        display: flex;
       }
-
+&__subtitle {
+  min-width: 50%;
+}
       &__description-item {
         margin-bottom: 12px;
       }
@@ -2629,7 +2634,18 @@ head::after {
     }
 
   }
-
+  .product {
+    &__nav-item {
+      margin-bottom: 20px;
+    }
+    &__main-img {
+      width: 250px;
+      height: 250px;
+    }
+    &__description {
+      display: none;
+    }
+  }
   .projects {
     padding: 25px calc((100% - var(--desktop-width)) / 2);
 
