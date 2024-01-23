@@ -1364,7 +1364,6 @@ head::after {
   &__item {
     display: flex;
     align-items: center;
-    height: 43px;
     background-color: $white;
     color: $blue;
     text-transform: uppercase;
@@ -2374,9 +2373,11 @@ head::after {
       width: 400px;
       height: 400px;
     }
-&__sidebar {
-  gap: 7px;
-}
+
+    &__sidebar {
+      gap: 7px;
+    }
+
     &__sidebar-main {
       width: 100%;
       height: 235px;
@@ -2429,9 +2430,11 @@ head::after {
         padding: 0;
         display: flex;
       }
-&__subtitle {
-  min-width: 50%;
-}
+
+      &__subtitle {
+        min-width: 50%;
+      }
+
       &__description-item {
         margin-bottom: 12px;
       }
@@ -2454,10 +2457,19 @@ head::after {
   }
 
   .dimensions {
+    &__table {
+      display: block;
+      max-width: 100%;
+      overflow-x: scroll;
+    }
 
     th,
     td {
       padding: 10px;
+
+      &.pad {
+        min-width: 110px;
+      }
     }
   }
 }
@@ -2607,7 +2619,7 @@ head::after {
 
     &__container {
       max-width: 100%;
-      grid-template-rows: repeat(3, 165px);
+      grid-template-rows: repeat(5, 165px);
       grid-template-columns: repeat(2, calc(50% - 4px));
     }
 
@@ -2634,18 +2646,23 @@ head::after {
     }
 
   }
+
   .product {
     &__nav-item {
       margin-bottom: 20px;
     }
+
     &__main-img {
-      width: 250px;
-      height: 250px;
+      width: 100%;
+      max-width: 400px;
+      height: fit-content;
     }
+
     &__description {
       display: none;
     }
   }
+
   .projects {
     padding: 25px calc((100% - var(--desktop-width)) / 2);
 
@@ -2676,6 +2693,16 @@ head::after {
   .infonav {
     &__title {
       display: none;
+    }
+
+    &__item {
+      &.active {
+        padding: 8px 15px;
+      }
+
+      &:nth-child(2) {
+        padding: 8px 15px 8px 55px;
+      }
     }
   }
 
