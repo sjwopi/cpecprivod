@@ -1,13 +1,19 @@
+if (document.documentElement.clientWidth >= 800) {
 
-var swiper = new Swiper(".mySwiper", {
-  cssMode: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  mousewheel: true,
-  keyboard: true,
-});
+  const catalogGrid = document.querySelector('.catalog__grid');
+  const catNav = document.querySelector('.catalog__nav')
+
+  catNav.querySelectorAll('.catalog__name').forEach(item => {
+
+    item.addEventListener('mouseover', () => {
+      catalogGrid.classList.add('active');
+      item.parentElement.classList.add('active');
+    });
+
+    item.addEventListener('mouseout', () => {
+      catalogGrid.classList.remove('active');
+      item.parentElement.classList.remove('active');
+    });
+
+  })
+}

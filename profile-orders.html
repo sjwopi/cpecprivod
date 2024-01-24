@@ -27,9 +27,9 @@
         <input class="header__input" placeholder="Поиск по сайту" />
 
         <div class="header__icons">
-          <a class="header__icon" href="./favorite.html"><img class="header__icon" src="./img/like.svg"
+          <a class="header__icon" href="./profile-favorite.html"><img class="header__icon" src="./img/like.svg"
               alt="избранное" /></a>
-          <a class="header__icon" href="./basket.html"><img class="header__icon" src="./img/basket.svg"
+          <a class="header__icon" href="./profile-basket.html"><img class="header__icon" src="./img/basket.svg"
               alt="корзина" /></a>
           <a class="header__icon" href="./profile.html"><img class="header__icon" src="./img/profile.svg"
               alt="ваш профиль" /></a>
@@ -72,9 +72,9 @@
       <input class="header-mobile__input" placeholder="Поиск по сайту" />
 
       <div class="header__icons">
-        <a class="header-mobile__icon" href="./favorite.html"><img class="header-mobile__icon" src="./img/like.svg"
+        <a class="header-mobile__icon" href="./profile-favorite.html"><img class="header-mobile__icon" src="./img/like.svg"
             alt="избранное" /></a>
-        <a class="header-mobile__icon" href="./basket.html"><img class="header-mobile__icon" src="./img/basket.svg"
+        <a class="header-mobile__icon" href="./profile-basket.html"><img class="header-mobile__icon" src="./img/basket.svg"
             alt="корзина" /></a>
         <a class="header-mobile__icon" href="./profile.html"><img class="header-mobile__icon" src="./img/profile.svg"
             alt="ваш профиль" /></a>
@@ -568,11 +568,12 @@
     </section>
 
     <section class="projects sub">
+      <div class="projects__overlay"></div>
+      <div class="projects__overlay left"></div>
       <h2 class="projects__title">Сопутствующие товары</h2>
 
       <div class="projects__container">
-        <div class="projects__overlay"></div>
-
+        
         <li class="catalog__item catalog__item_small">
           <div class="catalog__like"></div>
           <button class="catalog__basket"></button>
@@ -589,23 +590,7 @@
             </div>
           </a>
         </li>
-
-        <li class="catalog__item catalog__item_small">
-          <div class="catalog__like"></div>
-          <button class="catalog__basket"></button>
-          <a href="./catalogItem.html" class="catalog__content">
-            <img class="catalog__img" src="./img/card11.png" alt="фото детали">
-            <div>
-              <div class="catalog__buy">
-                <span class="catalog__price">3 626 ₽</span>
-              </div>
-              <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
-              <div class="catalog__subtext">
-                <span class="catalog__avlb-good">В наличии</span>
-              </div>
-            </div>
-          </a>
-        </li>
+        
         <li class="catalog__item catalog__item_small">
           <div class="catalog__like"></div>
           <button class="catalog__basket"></button>
@@ -654,7 +639,23 @@
             </div>
           </a>
         </li>
-
+        <li class="catalog__item catalog__item_small">
+          <div class="catalog__like"></div>
+          <button class="catalog__basket"></button>
+          <a href="./catalogItem.html" class="catalog__content">
+            <img class="catalog__img" src="./img/card11.png" alt="фото детали">
+            <div>
+              <div class="catalog__buy">
+                <span class="catalog__price">3 626 ₽</span>
+              </div>
+              <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+              <div class="catalog__subtext">
+                <span class="catalog__avlb-good">В наличии</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        
 
       </div>
     </section>
@@ -663,23 +664,23 @@
 
   <footer class="footer">
     <div class="footer__container">
-      <img src="./img/main-logo.svg" alt="лого компании медиалайн" class="footer__logo" />
+      <a class="footer__logo" href="./index.html"><img src="./img/main-logo.svg" alt="лого компании" /></a>
       <div>
         <a href="" class="footer__link">© Спецпривод. Пневматическое оборудование 2023</a>
         <a href="" class="footer__link">Политика конфиденциальности</a>
       </div>
     </div>
 
-    <list class="footer__container">
+    <ul class="footer__container">
       <li><a href="./catalog.html" class="footer__item">Каталог товаров</a></li>
       <li><a href="" class="footer__item">О компании</a></li>
       <li><a href="" class="footer__item">Выполненные проекты</a></li>
       <li><a href="" class="footer__item">Услуги</a></li>
       <li><a href="" class="footer__item">Доставка и оплата</a></li>
       <li><a href="" class="footer__item">Контакты</a></li>
-    </list>
+    </ul>
 
-    <list class="footer__container">
+    <ul class="footer__container">
       <li><a href="" class="footer__item">Нижний Новгород, пр. Гагарина, 178</a></li>
       <li><a href="" class="footer__item footer__item_big">+7 (977) 422-66-54</a></li>
       <li><a href="" class="footer__item footer__item_big">+7 (920) 252-50-32</a></li>
@@ -689,13 +690,14 @@
       <li>
         <p class="footer__item">Нашли ошибку в тексте? Выделите <br> ее и нажмите CTRL + ENTER</p>
       </li>
-    </list>
+    </ul>
 
-    <list class="footer__container">
+    <ul class="footer__container">
       <button class="footer__btn">Заказать звонок</button>
       <img class="footer__img" src="./img/Счетчик Изображение.svg" alt="счетчик изображение">
-      <li><a href="https://sitenn.ru/" class="footer__item">Разработка сайта Сайт НН</a></li>
-    </list>
+      <a href="https://sitenn.ru/" class="footer__item">Разработка сайта Сайт НН</a>
+    </ul>
+    
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
