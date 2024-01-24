@@ -2371,7 +2371,7 @@ head::after {
   .footer {
     height: fit-content;
     flex-direction: column;
-    padding: 20px calc((100% - var(--desktop-width)) / 2);
+    padding: 40px calc((100% - var(--desktop-width)) / 2);
 
     &__logo {
       max-width: 150px;
