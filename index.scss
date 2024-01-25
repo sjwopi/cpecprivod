@@ -651,7 +651,7 @@ head::after {
     justify-content: space-between;
     margin: 0;
   }
-  
+
   &__nav-item {
     background-color: $light-gray;
     padding-right: 7px;
@@ -799,7 +799,7 @@ head::after {
   }
 
   &__price {
-    font-size: var(--font-line-xl);
+    font-size: var(--font-size-xl);
     line-height: var(--font-line-xl);
     font-weight: 700;
   }
@@ -909,12 +909,22 @@ head::after {
   border-radius: 0 0 20px 20px;
   overflow: hidden;
 
+  &.dim-mobile {
+    display: none;
+  }
+
   &.sub {
     border-radius: 0;
 
     .catalog__avlb-good {
       float: left;
     }
+  }
+
+  .catalog__basket {
+    bottom: 149px;
+    height: 36px;
+    width: 60px;
   }
 
   &__container {
@@ -1476,6 +1486,10 @@ head::after {
   &__text {
     width: 100%;
   }
+
+  &__more {
+    display: none;
+  }
 }
 
 /* dimensions */
@@ -1850,6 +1864,7 @@ head::after {
     line-height: var(--font-line-xl);
     font-weight: 600;
   }
+
   &__count {
     font-size: var(--font-size-l);
     line-height: var(--font-line-xl);
@@ -2144,7 +2159,12 @@ head::after {
   }
 
   .projects {
-    //padding: 56px calc((100% - var(--desktop-width)) / 2 + 20px);
+    .catalog__basket {
+      top: 268px;
+      height: 30px;
+      width: 54px;
+      right: 25px;
+    }
 
     &__card {
       padding: 10px;
@@ -2258,6 +2278,11 @@ head::after {
   }
 
   .projects {
+    .catalog__basket {
+      top: 244px;
+      width: 49px;
+      right: 17px;
+    }
     &__card {
       padding: 15px;
       max-height: 410px;
@@ -2355,7 +2380,18 @@ head::after {
   }
 
   .projects {
+    &.dim {
+      display: none;
+    }
+
+    &.dim-mobile {
+      display: block;
+    }
+
     .catalog {
+      &__basket {
+        top: 239px;
+      }
       &__item {
         min-width: 200px;
 
@@ -2449,6 +2485,9 @@ head::after {
       flex-direction: column;
       align-items: center;
     }
+    &__sidebar-btn.active {
+    margin-bottom: 0;
+    }
 
     &__counter {
       gap: 10px;
@@ -2462,6 +2501,7 @@ head::after {
 
     &__input {
       width: 100px;
+      min-height: 40px;
     }
 
     &__description-item {
@@ -2479,6 +2519,10 @@ head::after {
     margin-bottom: -1px;
     padding-top: 20px;
     padding-bottom: 20px;
+
+    &__title {
+      display: none;
+    }
   }
 
   .description {
@@ -2534,6 +2578,12 @@ head::after {
       &.pad {
         min-width: 110px;
       }
+    }
+  }
+
+  .footer {
+    &.blue {
+      background-color: $light-gray;
     }
   }
 }
@@ -2727,6 +2777,9 @@ head::after {
     &__description {
       display: none;
     }
+    &__sidebar-btn.active {
+    margin-bottom: 10px;
+    }
   }
 
   .projects {
@@ -2762,17 +2815,17 @@ head::after {
   }
 
   .infonav {
-    &__title {
-      display: none;
-    }
-
+    padding: 10px 10px;
     &__item {
       &.active {
         padding: 8px 15px;
       }
-
+      &:first-child {
+        padding: 10px 52px 10px 20px;
+      }
       &:nth-child(2) {
-        padding: 8px 15px 8px 55px;
+        padding: 8px 18px 8px 26px;
+        margin: 0;
       }
     }
   }
