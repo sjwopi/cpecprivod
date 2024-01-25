@@ -2798,6 +2798,11 @@ head::after {
     }
 
     .catalog {
+      &__basket {
+        top: 178px;
+        width: 30px;
+        height: 20px;
+      }
       &__item {
         min-width: 140px;
       }
