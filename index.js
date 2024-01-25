@@ -8,11 +8,13 @@ if (document.documentElement.clientWidth >= 800) {
     item.addEventListener('mouseover', () => {
       catalogGrid.classList.add('active');
       item.parentElement.classList.add('active');
+      document.querySelector('.catalog__title_sub').textContent =  item.textContent;
     });
 
     item.addEventListener('mouseout', () => {
       catalogGrid.classList.remove('active');
       item.parentElement.classList.remove('active');
+      document.querySelector('.catalog__title_sub').textContent =  "Сборные блоки";
     });
 
   })

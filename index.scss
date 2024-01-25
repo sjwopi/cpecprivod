@@ -251,6 +251,8 @@ head::after {
 .header-mobile {
   display: none;
   width: 100%;
+  position: relative;
+  z-index: 10;
 
   &__first {
     display: flex;
