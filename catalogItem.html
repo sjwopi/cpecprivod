@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
@@ -31,8 +35,7 @@
               alt="избранное" /></a>
           <a class="header__icon" href="./profile-basket.html"><img class="header__icon" src="./img/basket.svg"
               alt="корзина" /></a>
-          <a class="header__icon" href="./profile.html"><img class="header__icon" src="./img/profile.svg"
-              alt="ваш профиль" /></a>
+          <div class="header__icon head-profile"><img class="header__icon" src="./img/profile.svg"></div>
         </div>
       </div>
 
@@ -72,15 +75,15 @@
       <input class="header-mobile__input" placeholder="Поиск по сайту" />
 
       <div class="header__icons">
-        <a class="header-mobile__icon" href="./profile-favorite.html"><img class="header-mobile__icon" src="./img/like.svg"
-            alt="избранное" /></a>
-        <a class="header-mobile__icon" href="./profile-basket.html"><img class="header-mobile__icon" src="./img/basket.svg"
-            alt="корзина" /></a>
-        <a class="header-mobile__icon" href="./profile.html"><img class="header-mobile__icon" src="./img/profile.svg"
-            alt="ваш профиль" /></a>
+        <a class="header-mobile__icon" href="./profile-favorite.html"><img class="header-mobile__icon"
+            src="./img/like.svg" alt="избранное" /></a>
+        <a class="header-mobile__icon" href="./profile-basket.html"><img class="header-mobile__icon"
+            src="./img/basket.svg" alt="корзина" /></a>
+        <div class="header__icon head-profile"><img class="header__icon" src="./img/profile.svg"></div>
       </div>
     </div>
   </header>
+
 
   <main>
     <nav aria-label="breadcrumb">
@@ -142,7 +145,7 @@
               <div class="d-flex">
                 <button class="product__counter-btn"
                   onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
-                  <input type="number" min="0" class="product__input" value="1">
+                <input type="number" min="0" class="product__input" value="1">
                 <button class="product__counter-btn right"
                   onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
               </div>
@@ -165,7 +168,7 @@
       <h2 class="projects__title">Сопутствующие товары</h2>
 
       <div class="projects__container">
-        
+
         <li class="catalog__item catalog__item_small">
           <div class="catalog__like"></div>
           <button class="catalog__basket"></button>
@@ -182,39 +185,7 @@
             </div>
           </a>
         </li>
-        
-        <li class="catalog__item catalog__item_small">
-          <div class="catalog__like"></div>
-          <button class="catalog__basket"></button>
-          <a href="./catalogItem.html" class="catalog__content">
-            <img class="catalog__img" src="./img/card11.png" alt="фото детали">
-            <div>
-              <div class="catalog__buy">
-                <span class="catalog__price">3 626 ₽</span>
-              </div>
-              <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
-              <div class="catalog__subtext">
-                <span class="catalog__avlb-good">В наличии</span>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li class="catalog__item catalog__item_small">
-          <div class="catalog__like"></div>
-          <button class="catalog__basket"></button>
-          <a href="./catalogItem.html" class="catalog__content">
-            <img class="catalog__img" src="./img/card11.png" alt="фото детали">
-            <div>
-              <div class="catalog__buy">
-                <span class="catalog__price">3 626 ₽</span>
-              </div>
-              <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
-              <div class="catalog__subtext">
-                <span class="catalog__avlb-good">В наличии</span>
-              </div>
-            </div>
-          </a>
-        </li>
+
         <li class="catalog__item catalog__item_small">
           <div class="catalog__like"></div>
           <button class="catalog__basket"></button>
@@ -247,7 +218,39 @@
             </div>
           </a>
         </li>
-        
+        <li class="catalog__item catalog__item_small">
+          <div class="catalog__like"></div>
+          <button class="catalog__basket"></button>
+          <a href="./catalogItem.html" class="catalog__content">
+            <img class="catalog__img" src="./img/card11.png" alt="фото детали">
+            <div>
+              <div class="catalog__buy">
+                <span class="catalog__price">3 626 ₽</span>
+              </div>
+              <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+              <div class="catalog__subtext">
+                <span class="catalog__avlb-good">В наличии</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="catalog__item catalog__item_small">
+          <div class="catalog__like"></div>
+          <button class="catalog__basket"></button>
+          <a href="./catalogItem.html" class="catalog__content">
+            <img class="catalog__img" src="./img/card11.png" alt="фото детали">
+            <div>
+              <div class="catalog__buy">
+                <span class="catalog__price">3 626 ₽</span>
+              </div>
+              <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+              <div class="catalog__subtext">
+                <span class="catalog__avlb-good">В наличии</span>
+              </div>
+            </div>
+          </a>
+        </li>
+
 
       </div>
     </section>
@@ -278,12 +281,57 @@
             <div class="product__underline"></div>
             <p class="product__text">воздух</p>
           </li>
+          <div class="displaySub">
+
+            <li class="product__description-item">
+              <p class="product__subtitle">Материалы</p>
+              <div class="product__underline"></div>
+              <p class="product__text">NBR, POM, Алюминий, нейлон, технополимер</p>
+            </li>
+            <li class="product__description-item">
+              <p class="product__subtitle">Конструкция</p>
+              <div class="product__underline"></div>
+              <p class="product__text">Двухкамерная с распылителем и регулятором, Мембранный регулятор и фильтр
+                циклонного
+                типа</p>
+            </li>
+            <li class="product__description-item">
+              <p class="product__subtitle">Присоединительная резьба</p>
+              <div class="product__underline"></div>
+              <p class="product__text">G1/4"</p>
+            </li>
+            <li class="product__description-item">
+              <p class="product__subtitle">Слив конденсата</p>
+              <div class="product__underline"></div>
+              <p class="product__text">ручной</p>
+            </li>
+            <li class="product__description-item">
+              <p class="product__subtitle">Степень фильтрации</p>
+              <div class="product__underline"></div>
+              <p class="product__text">5 мкм</p>
+            </li>
+            <li class="product__description-item">
+              <p class="product__subtitle">Расход воздуха</p>
+              <div class="product__underline"></div>
+              <p class="product__text">550 нЛ/мин</p>
+            </li>
+            <li class="product__description-item">
+              <p class="product__subtitle">Резьба для манометра</p>
+              <div class="product__underline"></div>
+              <p class="product__text">G1/8"</p>
+            </li>
+            <li class="product__description-item">
+              <p class="product__subtitle">Регулирование давления</p>
+              <div class="product__underline"></div>
+              <p class="product__text">0.5 - 8.5 Бар</p>
+            </li>
+          </div>
         </ul>
 
         <button class="description__more" type="button" data-toggle="collapse" data-target="#multiCollapseExample2"
           aria-expanded="false" aria-controls="multiCollapseExample2">Подробнее</button>
 
-        <div class="collapse multi-collapse"  id="multiCollapseExample2">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
           <ul class="product__description description__text">
 
             <li class="product__description-item">
@@ -345,7 +393,7 @@
       <h2 class="projects__title">Сопутствующие товары</h2>
 
       <div class="projects__container">
-        
+
         <li class="catalog__item catalog__item_small">
           <div class="catalog__like"></div>
           <button class="catalog__basket"></button>
@@ -362,39 +410,7 @@
             </div>
           </a>
         </li>
-        
-        <li class="catalog__item catalog__item_small">
-          <div class="catalog__like"></div>
-          <button class="catalog__basket"></button>
-          <a href="./catalogItem.html" class="catalog__content">
-            <img class="catalog__img" src="./img/card11.png" alt="фото детали">
-            <div>
-              <div class="catalog__buy">
-                <span class="catalog__price">3 626 ₽</span>
-              </div>
-              <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
-              <div class="catalog__subtext">
-                <span class="catalog__avlb-good">В наличии</span>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li class="catalog__item catalog__item_small">
-          <div class="catalog__like"></div>
-          <button class="catalog__basket"></button>
-          <a href="./catalogItem.html" class="catalog__content">
-            <img class="catalog__img" src="./img/card11.png" alt="фото детали">
-            <div>
-              <div class="catalog__buy">
-                <span class="catalog__price">3 626 ₽</span>
-              </div>
-              <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
-              <div class="catalog__subtext">
-                <span class="catalog__avlb-good">В наличии</span>
-              </div>
-            </div>
-          </a>
-        </li>
+
         <li class="catalog__item catalog__item_small">
           <div class="catalog__like"></div>
           <button class="catalog__basket"></button>
@@ -427,7 +443,39 @@
             </div>
           </a>
         </li>
-        
+        <li class="catalog__item catalog__item_small">
+          <div class="catalog__like"></div>
+          <button class="catalog__basket"></button>
+          <a href="./catalogItem.html" class="catalog__content">
+            <img class="catalog__img" src="./img/card11.png" alt="фото детали">
+            <div>
+              <div class="catalog__buy">
+                <span class="catalog__price">3 626 ₽</span>
+              </div>
+              <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+              <div class="catalog__subtext">
+                <span class="catalog__avlb-good">В наличии</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="catalog__item catalog__item_small">
+          <div class="catalog__like"></div>
+          <button class="catalog__basket"></button>
+          <a href="./catalogItem.html" class="catalog__content">
+            <img class="catalog__img" src="./img/card11.png" alt="фото детали">
+            <div>
+              <div class="catalog__buy">
+                <span class="catalog__price">3 626 ₽</span>
+              </div>
+              <p class="catalog__text">Блок подготовки воздуха SA-C20-08 Specprivod TM G1/4 500 Нл/мин</p>
+              <div class="catalog__subtext">
+                <span class="catalog__avlb-good">В наличии</span>
+              </div>
+            </div>
+          </a>
+        </li>
+
 
       </div>
     </section>
@@ -469,9 +517,92 @@
       <img class="footer__img" src="./img/Счетчик Изображение.svg" alt="счетчик изображение">
       <a href="https://sitenn.ru/" class="footer__item">Разработка сайта Сайт НН</a>
     </ul>
-    
-  </footer>
 
+  </footer>
+  <div class="modal modalLogin">
+    <form class="modal__form">
+      <h2 class="modal__title">Войти</h2>
+      <input class="modal__item" placeholder="E-mail">
+      <input class="modal__item" placeholder="Пароль">
+      <a class="modal__item help">Я не помню пароль</a>
+      <button class="modal__item btn btnGo">Войти</button>
+      <button class="modal__item btn btnChangeGo">Регистрация</button>
+    </form>
+  </div>
+
+  <div class="modal modalRegister">
+    <form class="modal__form">
+
+      <h2 class="modal__title">Регистрация</h2>
+
+      <div class="modal__item modal__slide d-flex flex-row">
+        <button class="infonav__item active btnToFiz">Физическое лицо</button>
+        <button class="infonav__item btnToUr">Юридическое лицо</button>
+      </div>
+
+      <input class="modal__item" placeholder="E-mail">
+      <input class="modal__item" placeholder="Пароль">
+      <input class="modal__item" placeholder="Подтвердите пароль">
+      <input class="modal__item" placeholder="Ваше имя">
+      <input class="modal__item" placeholder="Отчество (при наличии)">
+      <input class="modal__item" placeholder="Телефон">
+      <input class="modal__item" placeholder="Адрес">
+
+      <div class="modal__item radio">
+        <label for="modalCheckbox" class="profile__checkbox-text">
+          <input id="modalCheckbox" class="profile__checkbox" type="checkbox">
+          <label for="modalCheckbox" class="profile__checkbox_lbl"></label>
+          Даю согласие на обработку персональных данных в соответствии с ФЗ №152 от 27.07.2006
+        </label>
+      </div>
+
+      <button class="modal__item btn btnGo">Регистрация</button>
+      <button class="modal__item btn btnChangeGo">Войти</button>
+    </form>
+  </div>
+
+  <div class="modal modalRegisterUr">
+    <div class="modal__overlay"></div>
+    <form class="modal__form">
+
+      <h2 class="modal__title">Регистрация</h2>
+
+      <div class="modal__item modal__slide d-flex flex-row">
+        <button class="infonav__item btnToFiz">Физическое лицо</button>
+        <button class="infonav__item active btnToUr">Юридическое лицо</button>
+      </div>
+
+      <input class="modal__item" placeholder="E-mail">
+      <input class="modal__item" placeholder="Пароль">
+      <input class="modal__item" placeholder="Подтвердите пароль">
+      <input class="modal__item" placeholder="Ваше имя">
+      <input class="modal__item" placeholder="Отчество (при наличии)">
+      <input class="modal__item" placeholder="Телефон">
+      <input class="modal__item" placeholder="Адрес">
+      <input class="modal__item" placeholder="ИНН">
+      <input class="modal__item" placeholder="КПП">
+      <input class="modal__item" placeholder="Название юридического лица">
+      <input class="modal__item" placeholder="Юридический адрес">
+      <input class="modal__item" placeholder="Банк">
+      <input class="modal__item" placeholder="БИК">
+      <input class="modal__item" placeholder="Корреспондентский счёт">
+      <input class="modal__item" placeholder="Рассчетный счет">
+
+      <div class="modal__item radio">
+        <label for="modalCheckbox" class="profile__checkbox-text">
+          <input id="modalCheckbox" class="profile__checkbox" type="checkbox">
+          <label for="modalCheckbox" class="profile__checkbox_lbl"></label>
+          Даю согласие на обработку персональных данных в соответствии с ФЗ №152 от 27.07.2006
+        </label>
+      </div>
+
+      <button class="modal__item btn btnGo">Регистрация</button>
+      <button class="modal__item btn btnChangeGo">Войти</button>
+    </form>
+  </div>
+
+
+  <script src="./login.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>

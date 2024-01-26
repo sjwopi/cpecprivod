@@ -32,8 +32,7 @@
               alt="избранное" /></a>
           <a class="header__icon" href="./profile-basket.html"><img class="header__icon" src="./img/basket.svg"
               alt="корзина" /></a>
-          <a class="header__icon" href="./profile.html"><img class="header__icon" src="./img/profile.svg"
-              alt="ваш профиль" /></a>
+          <div class="header__icon head-profile"><img class="header__icon" src="./img/profile.svg"></div>
         </div>
       </div>
 
@@ -73,15 +72,15 @@
       <input class="header-mobile__input" placeholder="Поиск по сайту" />
 
       <div class="header__icons">
-        <a class="header-mobile__icon" href="./profile-favorite.html"><img class="header-mobile__icon" src="./img/like.svg"
-            alt="избранное" /></a>
-        <a class="header-mobile__icon" href="./profile-basket.html"><img class="header-mobile__icon" src="./img/basket.svg"
-            alt="корзина" /></a>
-        <a class="header-mobile__icon" href="./profile.html"><img class="header-mobile__icon" src="./img/profile.svg"
-            alt="ваш профиль" /></a>
+        <a class="header-mobile__icon" href="./profile-favorite.html"><img class="header-mobile__icon"
+            src="./img/like.svg" alt="избранное" /></a>
+        <a class="header-mobile__icon" href="./profile-basket.html"><img class="header-mobile__icon"
+            src="./img/basket.svg" alt="корзина" /></a>
+        <div class="header__icon head-profile"><img class="header__icon" src="./img/profile.svg"></div>
       </div>
     </div>
   </header>
+
 
   <main>
     <div class="swiper-container">
@@ -487,7 +486,90 @@
     </ul>
     
   </footer>
+  <div class="modal modalLogin">
+    <form class="modal__form">
+      <h2 class="modal__title">Войти</h2>
+      <input class="modal__item" placeholder="E-mail">
+      <input class="modal__item" placeholder="Пароль">
+      <a class="modal__item help">Я не помню пароль</a>
+      <button class="modal__item btn btnGo">Войти</button>
+      <button class="modal__item btn btnChangeGo">Регистрация</button>
+    </form>
+  </div>
 
+  <div class="modal modalRegister">
+    <form class="modal__form">
+
+      <h2 class="modal__title">Регистрация</h2>
+
+      <div class="modal__item modal__slide d-flex flex-row">
+        <button class="infonav__item active btnToFiz">Физическое лицо</button>
+        <button class="infonav__item btnToUr">Юридическое лицо</button>
+      </div>
+
+      <input class="modal__item" placeholder="E-mail">
+      <input class="modal__item" placeholder="Пароль">
+      <input class="modal__item" placeholder="Подтвердите пароль">
+      <input class="modal__item" placeholder="Ваше имя">
+      <input class="modal__item" placeholder="Отчество (при наличии)">
+      <input class="modal__item" placeholder="Телефон">
+      <input class="modal__item" placeholder="Адрес">
+
+      <div class="modal__item radio">
+        <label for="modalCheckbox" class="profile__checkbox-text">
+          <input id="modalCheckbox" class="profile__checkbox" type="checkbox">
+          <label for="modalCheckbox" class="profile__checkbox_lbl"></label>
+          Даю согласие на обработку персональных данных в соответствии с ФЗ №152 от 27.07.2006
+        </label>
+      </div>
+
+      <button class="modal__item btn btnGo">Регистрация</button>
+      <button class="modal__item btn btnChangeGo">Войти</button>
+    </form>
+  </div>
+
+  <div class="modal modalRegisterUr">
+    <div class="modal__overlay"></div>
+    <form class="modal__form">
+
+      <h2 class="modal__title">Регистрация</h2>
+
+      <div class="modal__item modal__slide d-flex flex-row">
+        <button class="infonav__item btnToFiz">Физическое лицо</button>
+        <button class="infonav__item active btnToUr">Юридическое лицо</button>
+      </div>
+
+      <input class="modal__item" placeholder="E-mail">
+      <input class="modal__item" placeholder="Пароль">
+      <input class="modal__item" placeholder="Подтвердите пароль">
+      <input class="modal__item" placeholder="Ваше имя">
+      <input class="modal__item" placeholder="Отчество (при наличии)">
+      <input class="modal__item" placeholder="Телефон">
+      <input class="modal__item" placeholder="Адрес">
+      <input class="modal__item" placeholder="ИНН">
+      <input class="modal__item" placeholder="КПП">
+      <input class="modal__item" placeholder="Название юридического лица">
+      <input class="modal__item" placeholder="Юридический адрес">
+      <input class="modal__item" placeholder="Банк">
+      <input class="modal__item" placeholder="БИК">
+      <input class="modal__item" placeholder="Корреспондентский счёт">
+      <input class="modal__item" placeholder="Рассчетный счет">
+
+      <div class="modal__item radio">
+        <label for="modalCheckbox" class="profile__checkbox-text">
+          <input id="modalCheckbox" class="profile__checkbox" type="checkbox">
+          <label for="modalCheckbox" class="profile__checkbox_lbl"></label>
+          Даю согласие на обработку персональных данных в соответствии с ФЗ №152 от 27.07.2006
+        </label>
+      </div>
+
+      <button class="modal__item btn btnGo">Регистрация</button>
+      <button class="modal__item btn btnChangeGo">Войти</button>
+    </form>
+  </div>
+
+
+  <script src="./login.js"></script>
   <script src="./index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>

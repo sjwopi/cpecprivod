@@ -65,25 +65,25 @@ body::after {
 }
 
 body::before {
-  text-shadow: 1.4226817686em 2.7606718998em 10.4153708504px rgba(16, 55, 132, 0.75), 1.2144410764em -0.1249655474em 10.4514802214px rgba(16, 55, 132, 0.75), 0.3776374345em 1.3468715992em 10.7941444328px rgba(16, 55, 132, 0.75), 0.4953981268em -0.1414712428em 11.1242622497px rgba(16, 55, 132, 0.75), 3.4170810648em -0.4451897315em 11.7095928526px rgba(16, 55, 132, 0.75), 2.5978718383em 3.1511029997em 10.3141951634px rgba(16, 55, 132, 0.75), 0.7901065704em 0.4420448671em 10.493138151px rgba(16, 55, 132, 0.75), 1.7426736594em 3.1077481927em 10.4826899363px rgba(16, 55, 132, 0.75), 1.2041324195em 1.0970274041em 11.3252503001px rgba(16, 55, 132, 0.75), 1.0200642028em 3.1119996007em 10.1922277501px rgba(16, 55, 132, 0.75), -0.2585354135em 2.7515968233em 11.8026583733px rgba(16, 55, 132, 0.75);
+  text-shadow: 0.6972079533em 3.2874203764em 11.1044724469px rgba(16, 55, 132, 0.75), 3.1721561332em -0.0110161434em 10.9662469773px rgba(16, 55, 132, 0.75), 0.3677055006em 1.2759953692em 10.9562149609px rgba(16, 55, 132, 0.75), 2.0052808143em 2.7065353822em 11.0623228351px rgba(16, 55, 132, 0.75), 1.5174845677em 1.1762349264em 10.2065191122px rgba(16, 55, 132, 0.75), 2.5545114024em -0.0405546344em 11.040687646px rgba(16, 55, 132, 0.75), 2.2145577481em 0.6933853122em 10.059507346px rgba(16, 55, 132, 0.75), 1.2923542136em 0.7591477143em 11.9599227542px rgba(16, 55, 132, 0.75), 3.2499309885em 1.2165453303em 11.7115784522px rgba(16, 55, 132, 0.75), 0.0901134369em 1.4555232599em 11.5852042604px rgba(16, 55, 132, 0.75), 2.3232879703em 2.1671475561em 10.6199894709px rgba(16, 55, 132, 0.75);
   animation-duration: 38s;
   animation-delay: -15s;
 }
 
 body::after {
-  text-shadow: 0.4821299813em 0.4058989921em 11.6649703553px rgba(16, 55, 132, 0.75), 0.4316863255em -0.3075380867em 11.7406568315px rgba(16, 55, 132, 0.75), 2.428608138em 2.4370798438em 11.754444331px rgba(16, 55, 132, 0.75), 3.0248635914em 0.1802187759em 10.5792340042px rgba(16, 55, 132, 0.75), 0.8625446383em -0.418926194em 10.7416935087px rgba(16, 55, 132, 0.75), 1.6314321047em 0.7990263174em 11.7764952706px rgba(16, 55, 132, 0.75), 0.8333577608em 1.5060359059em 11.2793186819px rgba(16, 55, 132, 0.75), 1.3736111304em 1.6051732648em 10.0030858379px rgba(16, 55, 132, 0.75), 1.6075224881em 0.4285315236em 10.2120701435px rgba(16, 55, 132, 0.75), 3.3375991989em 1.5285656143em 11.2708882903px rgba(16, 55, 132, 0.75), -0.0945772034em 2.2879586391em 10.3895858771px rgba(16, 55, 132, 0.75);
+  text-shadow: 2.0768509302em 2.2833537691em 11.5755784208px rgba(16, 55, 132, 0.75), -0.3694551218em 2.1565878018em 10.2330436106px rgba(16, 55, 132, 0.75), -0.1684748476em -0.1891526672em 11.2910379503px rgba(16, 55, 132, 0.75), 2.8903796345em 2.2017697419em 11.8027314122px rgba(16, 55, 132, 0.75), -0.2817209816em 1.5904838714em 11.6839221415px rgba(16, 55, 132, 0.75), 0.4265000393em 0.9016212029em 11.6658064646px rgba(16, 55, 132, 0.75), 0.9257401669em 2.6600066502em 10.5879792816px rgba(16, 55, 132, 0.75), 2.4099346311em 0.0218113961em 11.7157917626px rgba(16, 55, 132, 0.75), 1.7363617231em 1.2083130962em 10.8130015856px rgba(16, 55, 132, 0.75), 3.2395552951em 3.0412599554em 10.2729433022px rgba(16, 55, 132, 0.75), 0.0832743144em 2.1055410532em 11.0489959771px rgba(16, 55, 132, 0.75);
   animation-duration: 32s;
   animation-delay: -2s;
 }
 
 head::before {
-  text-shadow: 0.5593713935em 1.3459536268em 10.106294923px rgba(16, 55, 132, 0.75), 0.3611799714em 0.0927615751em 11.776822792px rgba(16, 55, 132, 0.75), 0.2342757741em 3.1568918966em 10.8140737235px rgba(16, 55, 132, 0.75), 1.5147919707em -0.2495370046em 10.3589767786px rgba(16, 55, 132, 0.75), 1.2795349585em -0.0083883937em 10.9211943406px rgba(16, 55, 132, 0.75), 3.1680300243em -0.2255327427em 10.6155587934px rgba(16, 55, 132, 0.75), -0.0958961127em 2.1558594684em 11.8024278493px rgba(16, 55, 132, 0.75), 2.3311848538em 1.8399423478em 10.8801456246px rgba(16, 55, 132, 0.75), 2.1230355552em 0.2781610018em 11.1493873643px rgba(16, 55, 132, 0.75), 2.2181721016em -0.2877220148em 10.9346572978px rgba(16, 55, 132, 0.75), -0.4929320919em 1.4736218632em 10.3079682229px rgba(16, 55, 132, 0.75);
+  text-shadow: 3.3986932129em 0.4127639115em 11.6040134567px rgba(16, 55, 132, 0.75), 2.0952202401em 3.3558352544em 11.9816049761px rgba(16, 55, 132, 0.75), 3.1019034049em 1.8967564148em 11.1979350808px rgba(16, 55, 132, 0.75), -0.0616158913em -0.1953203266em 11.8808324335px rgba(16, 55, 132, 0.75), 2.961236116em 2.939123126em 11.6102551962px rgba(16, 55, 132, 0.75), 1.1343758006em 1.5327659335em 10.0164043685px rgba(16, 55, 132, 0.75), 3.1598932338em -0.2622428404em 11.1930516937px rgba(16, 55, 132, 0.75), 2.769524706em 0.3334720076em 11.6222134044px rgba(16, 55, 132, 0.75), 2.3097659519em 2.3162363922em 10.1559827515px rgba(16, 55, 132, 0.75), 1.9729519962em 1.8862262164em 11.7644278772px rgba(16, 55, 132, 0.75), 2.6219433521em 0.3283343671em 11.98969866px rgba(16, 55, 132, 0.75);
   animation-duration: 34s;
   animation-delay: -32s;
 }
 
 head::after {
-  text-shadow: 1.0131426937em 1.1581285747em 10.4395616525px rgba(16, 55, 132, 0.75), 1.2524305032em 2.0885114331em 10.0911154432px rgba(16, 55, 132, 0.75), 2.2720528234em 2.620056386em 11.7474688677px rgba(16, 55, 132, 0.75), 0.5343015616em 0.4573253665em 11.7636214781px rgba(16, 55, 132, 0.75), -0.3930001964em 3.1585941562em 11.7018309135px rgba(16, 55, 132, 0.75), 2.7544369171em 2.3440946333em 11.3353862284px rgba(16, 55, 132, 0.75), 2.0857599854em 1.0714428034em 10.7215148487px rgba(16, 55, 132, 0.75), 1.4629298549em -0.3428873197em 11.5188924575px rgba(16, 55, 132, 0.75), 0.3763642021em 1.8929564419em 11.1263144474px rgba(16, 55, 132, 0.75), 2.1959479554em -0.2533816334em 11.3888740712px rgba(16, 55, 132, 0.75), 2.8149921487em 2.8713463287em 10.0929555968px rgba(16, 55, 132, 0.75);
+  text-shadow: 0.3583697777em 0.8140127885em 10.3001816912px rgba(16, 55, 132, 0.75), -0.3351881635em 2.4041006961em 10.0323094646px rgba(16, 55, 132, 0.75), 2.7392871132em 3.326331257em 11.1602813445px rgba(16, 55, 132, 0.75), 2.1247209452em 3.1239422943em 10.9454393918px rgba(16, 55, 132, 0.75), -0.4733626258em 0.6875835446em 11.6806906709px rgba(16, 55, 132, 0.75), 2.8024302879em 1.1085702824em 10.7972397391px rgba(16, 55, 132, 0.75), 1.4146826164em 2.7243284338em 11.3553201539px rgba(16, 55, 132, 0.75), -0.3379043884em 1.5694943133em 11.716065248px rgba(16, 55, 132, 0.75), 2.8278081624em -0.1998600431em 11.8371048392px rgba(16, 55, 132, 0.75), 2.9527579042em 0.7131211655em 10.0311075622px rgba(16, 55, 132, 0.75), 2.6924989261em 2.846430826em 10.3999288467px rgba(16, 55, 132, 0.75);
   animation-duration: 30s;
   animation-delay: -19s;
 }
@@ -1280,6 +1280,9 @@ head::after {
 .description__more {
   display: none;
 }
+.description .displaySub {
+  display: block;
+}
 
 /* dimensions */
 .dimensions {
@@ -1787,6 +1790,122 @@ head::after {
   margin: 0;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2274509804);
+}
+.modal.modalRegister .modal__form {
+  width: 660px;
+}
+.modal.modalRegister .modal__item {
+  margin: 0 65px;
+}
+.modal.modalRegisterUr .modal__form {
+  width: 660px;
+}
+.modal.modalRegisterUr .modal__item {
+  margin: 0 65px;
+}
+.modal.active {
+  display: block;
+}
+.modal__form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 530px;
+  max-height: 80%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.8);
+  background-color: #5078B9;
+  padding: 75px;
+}
+.modal__title {
+  text-align: center;
+  color: #fff;
+  font-size: var(--font-size-xl);
+  line-height: var(--font-line-xl);
+  font-weight: 500;
+}
+.modal__item {
+  height: 52px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 15px 35px;
+}
+.modal__item.help {
+  color: #ACBCDB !important;
+  text-decoration: underline !important;
+  background-color: transparent;
+  text-align: center;
+  padding: 5px 0 20px 0;
+}
+.modal__item.btn {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal__item.btnGo {
+  background-color: #103784;
+}
+.modal__item.btnChangeGo {
+  background-color: transparent;
+  border: 2px #fff solid;
+}
+.modal__item.radio {
+  background-color: transparent;
+  padding: 0;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.modal__item.radio .profile__checkbox-text {
+  color: #fff;
+  line-height: var(--font-size-s);
+}
+.modal__item.radio .profile__checkbox_lbl::before {
+  border-radius: 3px;
+  border: 1px #fff solid;
+}
+.modal__slide {
+  min-width: 500px;
+  background-color: transparent;
+  padding: 0;
+  margin: 0 !important;
+}
+.modal__slide .infonav__item {
+  text-align: center;
+  margin-right: 0;
+  padding: 0;
+  width: 100%;
+  height: 52px;
+}
+.modal__slide .infonav__item:first-child {
+  padding: 0 0 0 30px;
+  margin-right: -40px;
+}
+.modal__slide .infonav__item:last-child {
+  padding-left: 50px;
+  padding-right: 10px;
+}
+.modal__slide .infonav__item:last-child.active {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.modal__slide .infonav__item.active {
+  justify-content: center;
+  background-color: #103784;
+}
+
 @media screen and (max-width: 1620px) {
   body {
     --desktop-width: 1200px;
@@ -2135,6 +2254,9 @@ head::after {
     padding-bottom: 8px;
   }
   .description.collapse {
+    display: none;
+  }
+  .description .displaySub {
     display: none;
   }
   .dimensions__table {
