@@ -1,6 +1,7 @@
 const modalLogin = document.querySelector('.modalLogin');
 const modalRegister = document.querySelector('.modalRegister');
 const modalRegisterUr = document.querySelector('.modalRegisterUr');
+const modalCall = document.querySelector('.modalCall');
 
 /* переключение между физ и юр лицом */
 modalRegister.querySelector('.btnToUr').addEventListener('click', (e) => {
@@ -37,3 +38,8 @@ document.querySelector(".head-profile").addEventListener('click', () => {
   modalLogin.classList.add('active');
 })
 
+document.querySelectorAll('.callBtn').forEach(item => {
+  item.addEventListener('click', () => {
+    modalCall.classList.add('active');
+  })
+})

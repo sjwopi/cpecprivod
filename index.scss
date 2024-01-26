@@ -2110,11 +2110,34 @@ head::after {
       margin: 0 65px;
     }
   }
+  &.modalCall {
+    .modal__form {
+      width: 50%;
+    }
+    .modal__title {
+      text-align: start;
+    }
+    .modal__text {
+      color: $white;
+    }
+    .modal__subtext {
+      color: #ACBCDB;
+      padding-right: 20%;
+      margin: 0;
+    }
+  }
 
   &.active {
     display: block;
   }
-
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 7px;
+    width: 100%;
+    margin-right: 7px;
+  }
   &__form {
     position: absolute;
     top: 50%;
@@ -2169,7 +2192,10 @@ head::after {
       background-color: transparent;
       border: 2px $white solid;
     }
-
+    &.btnCall {
+      min-width: 200px;
+      background-color: $dark-blue;
+    }
     &.radio {
       background-color: transparent;
       padding: 0;
@@ -2184,6 +2210,11 @@ head::after {
         border-radius: 3px;
         border: 1px $white solid;
       }
+    }
+    &.sms {
+      height: 172px;
+      width: 100%;
+      align-items: start;
     }
   }
 

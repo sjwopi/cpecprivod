@@ -18,7 +18,7 @@
     <div class="header__first">
       <a href="#" class="header__link">+7 (920) 252-50-32</a>
       <a href="#" class="header__link">sale@specprivod.com</a>
-      <button type="button" class="header__btn">Заказать звонок</button>
+      <button type="button" class="header__btn callBtn callBtn">Заказать звонок</button>
     </div>
 
     <div class="header__container">
@@ -61,7 +61,7 @@
           <a class="header-mobile__nav-link" href="#">Услуги</a>
           <a class="header-mobile__nav-link" href="#">Доставка и оплата</a>
           <a class="header-mobile__nav-link" href="#">Контакты</a>
-          <button type="button" class="header-mobile__nav-link header-mobile__btn">Заказать звонок</button>
+          <button type="button" class="header-mobile__nav-link header-mobile__btn callBtn">Заказать звонок</button>
           <a href="#" class="header-mobile__nav-link header-mobile__link">sale@specprivod.com</a>
           <a href="#" class="header-mobile__nav-link header-mobile__link">+7 (920) 252-50-32</a>
         </nav>
@@ -178,7 +178,7 @@
     </section>
 
     <section class="catalog">
-      
+
       <div class="catalog__sidebar">
         <h2 class="catalog__title">Каталог товаров</h2>
         <a href="./catalog.html" class="catalog__all-btn">Полный каталог</a>
@@ -480,12 +480,13 @@
     </ul>
 
     <ul class="footer__container">
-      <button class="footer__btn">Заказать звонок</button>
+      <button class="footer__btn callBtn">Заказать звонок</button>
       <img class="footer__img" src="./img/Счетчик Изображение.svg" alt="счетчик изображение">
       <a href="https://sitenn.ru/" class="footer__item">Разработка сайта Сайт НН</a>
     </ul>
-    
+
   </footer>
+
   <div class="modal modalLogin">
     <form class="modal__form">
       <h2 class="modal__title">Войти</h2>
@@ -565,6 +566,26 @@
 
       <button class="modal__item btn btnGo">Регистрация</button>
       <button class="modal__item btn btnChangeGo">Войти</button>
+    </form>
+  </div>
+
+  <div class="modal modalCall">
+    <form class="modal__form">
+      <h2 class="modal__title">Получить консультацию</h2>
+      <p class="modal__text">Наши менеджеры перезвонят вам в течение 2 минут</p>
+      <div class="d-flex flex-row">
+        <div class="modal__container">
+          <input class="modal__item" placeholder="Ваше имя">
+          <input class="modal__item" placeholder="Телефон">
+          <input class="modal__item" placeholder="E-mail">
+        </div>
+        <input class="modal__item sms" placeholder="Сообщение">
+      </div>
+
+      <div class="d-flex flex-row align-items-center justify-content-between h-100">
+        <p class="modal__subtext">Заполняя настоящую форму вы даете свое согласие на обработку своих персональных данных. </p>
+        <button class="modal__item btn btnCall">Оставить заявку</button>
+      </div>
     </form>
   </div>
 
