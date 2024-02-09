@@ -2092,7 +2092,14 @@ head::after {
   z-index: 99;
   width: 100%;
   height: 100%;
-  background-color: #0000003a;
+
+  &__back {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #0000003a;
+  }
 
   &.modalRegister {
     .modal__form {
@@ -2140,6 +2147,7 @@ head::after {
   }
   &__form {
     position: absolute;
+    z-index: 9;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -2153,8 +2161,21 @@ head::after {
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.8);
     background-color: $blue;
     padding: 75px;
-  }
 
+    &::-webkit-scrollbar {
+      width: 0;
+      display: none;
+    }
+  }
+  &__close {
+    position: absolute;
+    width: 10%;
+    max-width: 50px;
+    aspect-ratio: 1/1;
+    top: 20px;
+    right: 20px;
+    filter: invert(1);
+  }
   &__title {
     text-align: center;
     color: $white;
