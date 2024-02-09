@@ -131,6 +131,11 @@ head::after {
   }
 }
 
+body {
+  &.open {
+    overflow: hidden;
+  }
+}
 
 .card {
   width: 300px;
